@@ -1,0 +1,962 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F06B15E31E975B810044B677 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B15E21E975B810044B677 /* main.m */; };
+		F06B15E61E975B810044B677 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B15E51E975B810044B677 /* AppDelegate.m */; };
+		F06B15EC1E975B810044B677 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F06B15EA1E975B810044B677 /* Main.storyboard */; };
+		F06B15EE1E975B810044B677 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F06B15ED1E975B810044B677 /* Assets.xcassets */; };
+		F06B15F11E975B810044B677 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F06B15EF1E975B810044B677 /* LaunchScreen.storyboard */; };
+		F06B15FC1E975B810044B677 /* LZHGRControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B15FB1E975B810044B677 /* LZHGRControlTests.m */; };
+		F06B16071E975B810044B677 /* LZHGRControlUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B16061E975B810044B677 /* LZHGRControlUITests.m */; };
+		F06B16311E9763CD0044B677 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F06B16301E9763CD0044B677 /* CFNetwork.framework */; };
+		F06B16351E9764240044B677 /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B16341E9764240044B677 /* AsyncUdpSocket.m */; };
+		F06B16391E9765A90044B677 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B16381E9765A90044B677 /* MainViewController.m */; };
+		F06B163C1E9765BE0044B677 /* AirconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B163B1E9765BE0044B677 /* AirconViewController.m */; };
+		F06B163F1E9765D60044B677 /* LightsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B163E1E9765D60044B677 /* LightsViewController.m */; };
+		F06B16421E9765EA0044B677 /* ServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B16411E9765EA0044B677 /* ServerViewController.m */; };
+		F06B16451E9765FA0044B677 /* SetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B16441E9765FA0044B677 /* SetViewController.m */; };
+		F06B164B1E97661B0044B677 /* light.png in Resources */ = {isa = PBXBuildFile; fileRef = F06B16471E97661B0044B677 /* light.png */; };
+		F06B164C1E97661B0044B677 /* server.png in Resources */ = {isa = PBXBuildFile; fileRef = F06B16481E97661B0044B677 /* server.png */; };
+		F06B164D1E97661B0044B677 /* main_bk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F06B164A1E97661B0044B677 /* main_bk.jpg */; };
+		F06B164F1E97665C0044B677 /* EquipmentInfoList.plist in Resources */ = {isa = PBXBuildFile; fileRef = F06B164E1E97665C0044B677 /* EquipmentInfoList.plist */; };
+		F06B16531E9767580044B677 /* AirconKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B16521E9767580044B677 /* AirconKeyboardView.m */; };
+		F06B16601E9767960044B677 /* BedroomLTView.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B16551E9767960044B677 /* BedroomLTView.m */; };
+		F06B16611E9767960044B677 /* CloakroomLTView.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B16571E9767960044B677 /* CloakroomLTView.m */; };
+		F06B16621E9767960044B677 /* GuestBathroomLTView.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B16591E9767960044B677 /* GuestBathroomLTView.m */; };
+		F06B16631E9767960044B677 /* MainLampLTView.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B165B1E9767960044B677 /* MainLampLTView.m */; };
+		F06B16641E9767960044B677 /* NavigationBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B165D1E9767960044B677 /* NavigationBarView.m */; };
+		F06B16651E9767960044B677 /* OverAllControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B165F1E9767960044B677 /* OverAllControlView.m */; };
+		F06B16681E9767B10044B677 /* ServerKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B16671E9767B10044B677 /* ServerKeyboardView.m */; };
+		F06B166B1E9767DB0044B677 /* SetKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B166A1E9767DB0044B677 /* SetKeyboardView.m */; };
+		F06B166E1E9768030044B677 /* TitleBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B166D1E9768030044B677 /* TitleBarView.m */; };
+		F06B16711E9768150044B677 /* ToletLTView.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B16701E9768150044B677 /* ToletLTView.m */; };
+		F06B16741E9768330044B677 /* Aircon.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B16731E9768330044B677 /* Aircon.m */; };
+		F06B16771E9768410044B677 /* EquipmentInfoManage.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B16761E9768410044B677 /* EquipmentInfoManage.m */; };
+		F06B167A1E9768510044B677 /* EquipmentInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B16791E9768510044B677 /* EquipmentInfo.m */; };
+		F06B167C1E97686A0044B677 /* AirconKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F06B167B1E97686A0044B677 /* AirconKeyboardView.xib */; };
+		F06B167E1E9768A50044B677 /* NavigationBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F06B167D1E9768A50044B677 /* NavigationBarView.xib */; };
+		F06B16801E9768B30044B677 /* OverAllControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F06B167F1E9768B30044B677 /* OverAllControlView.xib */; };
+		F06B16821E9768BF0044B677 /* ServerKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F06B16811E9768BF0044B677 /* ServerKeyboardView.xib */; };
+		F06B16841E9768CC0044B677 /* SetKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F06B16831E9768CC0044B677 /* SetKeyboardView.xib */; };
+		F06B16861E9768E20044B677 /* TitleBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F06B16851E9768E20044B677 /* TitleBarView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F06B15F81E975B810044B677 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F06B15D61E975B800044B677 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F06B15DD1E975B810044B677;
+			remoteInfo = LZHGRControl;
+		};
+		F06B16031E975B810044B677 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F06B15D61E975B800044B677 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F06B15DD1E975B810044B677;
+			remoteInfo = LZHGRControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F06B15DE1E975B810044B677 /* LZHGRControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZHGRControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F06B15E21E975B810044B677 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F06B15E41E975B810044B677 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F06B15E51E975B810044B677 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F06B15EB1E975B810044B677 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F06B15ED1E975B810044B677 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F06B15F01E975B810044B677 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F06B15F21E975B810044B677 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F06B15F71E975B810044B677 /* LZHGRControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LZHGRControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F06B15FB1E975B810044B677 /* LZHGRControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZHGRControlTests.m; sourceTree = "<group>"; };
+		F06B15FD1E975B810044B677 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F06B16021E975B810044B677 /* LZHGRControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LZHGRControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F06B16061E975B810044B677 /* LZHGRControlUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZHGRControlUITests.m; sourceTree = "<group>"; };
+		F06B16081E975B810044B677 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F06B16301E9763CD0044B677 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F06B16331E9764240044B677 /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncUdpSocket.h; sourceTree = "<group>"; };
+		F06B16341E9764240044B677 /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncUdpSocket.m; sourceTree = "<group>"; };
+		F06B16361E97644C0044B677 /* HGRPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGRPrefixHeader.pch; sourceTree = "<group>"; };
+		F06B16371E9765A90044B677 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		F06B16381E9765A90044B677 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		F06B163A1E9765BE0044B677 /* AirconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirconViewController.h; sourceTree = "<group>"; };
+		F06B163B1E9765BE0044B677 /* AirconViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirconViewController.m; sourceTree = "<group>"; };
+		F06B163D1E9765D60044B677 /* LightsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightsViewController.h; sourceTree = "<group>"; };
+		F06B163E1E9765D60044B677 /* LightsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightsViewController.m; sourceTree = "<group>"; };
+		F06B16401E9765EA0044B677 /* ServerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerViewController.h; sourceTree = "<group>"; };
+		F06B16411E9765EA0044B677 /* ServerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerViewController.m; sourceTree = "<group>"; };
+		F06B16431E9765FA0044B677 /* SetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetViewController.h; sourceTree = "<group>"; };
+		F06B16441E9765FA0044B677 /* SetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetViewController.m; sourceTree = "<group>"; };
+		F06B16471E97661B0044B677 /* light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light.png; sourceTree = "<group>"; };
+		F06B16481E97661B0044B677 /* server.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = server.png; sourceTree = "<group>"; };
+		F06B164A1E97661B0044B677 /* main_bk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = main_bk.jpg; sourceTree = "<group>"; };
+		F06B164E1E97665C0044B677 /* EquipmentInfoList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EquipmentInfoList.plist; sourceTree = "<group>"; };
+		F06B16511E9767580044B677 /* AirconKeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirconKeyboardView.h; sourceTree = "<group>"; };
+		F06B16521E9767580044B677 /* AirconKeyboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirconKeyboardView.m; sourceTree = "<group>"; };
+		F06B16541E9767960044B677 /* BedroomLTView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BedroomLTView.h; sourceTree = "<group>"; };
+		F06B16551E9767960044B677 /* BedroomLTView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BedroomLTView.m; sourceTree = "<group>"; };
+		F06B16561E9767960044B677 /* CloakroomLTView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloakroomLTView.h; sourceTree = "<group>"; };
+		F06B16571E9767960044B677 /* CloakroomLTView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloakroomLTView.m; sourceTree = "<group>"; };
+		F06B16581E9767960044B677 /* GuestBathroomLTView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuestBathroomLTView.h; sourceTree = "<group>"; };
+		F06B16591E9767960044B677 /* GuestBathroomLTView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuestBathroomLTView.m; sourceTree = "<group>"; };
+		F06B165A1E9767960044B677 /* MainLampLTView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainLampLTView.h; sourceTree = "<group>"; };
+		F06B165B1E9767960044B677 /* MainLampLTView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainLampLTView.m; sourceTree = "<group>"; };
+		F06B165C1E9767960044B677 /* NavigationBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationBarView.h; sourceTree = "<group>"; };
+		F06B165D1E9767960044B677 /* NavigationBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBarView.m; sourceTree = "<group>"; };
+		F06B165E1E9767960044B677 /* OverAllControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverAllControlView.h; sourceTree = "<group>"; };
+		F06B165F1E9767960044B677 /* OverAllControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverAllControlView.m; sourceTree = "<group>"; };
+		F06B16661E9767B10044B677 /* ServerKeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerKeyboardView.h; sourceTree = "<group>"; };
+		F06B16671E9767B10044B677 /* ServerKeyboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerKeyboardView.m; sourceTree = "<group>"; };
+		F06B16691E9767DB0044B677 /* SetKeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetKeyboardView.h; sourceTree = "<group>"; };
+		F06B166A1E9767DB0044B677 /* SetKeyboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetKeyboardView.m; sourceTree = "<group>"; };
+		F06B166C1E9768030044B677 /* TitleBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleBarView.h; sourceTree = "<group>"; };
+		F06B166D1E9768030044B677 /* TitleBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleBarView.m; sourceTree = "<group>"; };
+		F06B166F1E9768150044B677 /* ToletLTView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToletLTView.h; sourceTree = "<group>"; };
+		F06B16701E9768150044B677 /* ToletLTView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToletLTView.m; sourceTree = "<group>"; };
+		F06B16721E9768330044B677 /* Aircon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aircon.h; sourceTree = "<group>"; };
+		F06B16731E9768330044B677 /* Aircon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aircon.m; sourceTree = "<group>"; };
+		F06B16751E9768410044B677 /* EquipmentInfoManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EquipmentInfoManage.h; sourceTree = "<group>"; };
+		F06B16761E9768410044B677 /* EquipmentInfoManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EquipmentInfoManage.m; sourceTree = "<group>"; };
+		F06B16781E9768510044B677 /* EquipmentInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EquipmentInfo.h; sourceTree = "<group>"; };
+		F06B16791E9768510044B677 /* EquipmentInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EquipmentInfo.m; sourceTree = "<group>"; };
+		F06B167B1E97686A0044B677 /* AirconKeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AirconKeyboardView.xib; sourceTree = "<group>"; };
+		F06B167D1E9768A50044B677 /* NavigationBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigationBarView.xib; sourceTree = "<group>"; };
+		F06B167F1E9768B30044B677 /* OverAllControlView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverAllControlView.xib; sourceTree = "<group>"; };
+		F06B16811E9768BF0044B677 /* ServerKeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServerKeyboardView.xib; sourceTree = "<group>"; };
+		F06B16831E9768CC0044B677 /* SetKeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetKeyboardView.xib; sourceTree = "<group>"; };
+		F06B16851E9768E20044B677 /* TitleBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleBarView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F06B15DB1E975B810044B677 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F06B16311E9763CD0044B677 /* CFNetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F06B15F41E975B810044B677 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F06B15FF1E975B810044B677 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F06B15D51E975B800044B677 = {
+			isa = PBXGroup;
+			children = (
+				F06B15E01E975B810044B677 /* LZHGRControl */,
+				F06B15FA1E975B810044B677 /* LZHGRControlTests */,
+				F06B16051E975B810044B677 /* LZHGRControlUITests */,
+				F06B15DF1E975B810044B677 /* Products */,
+				F06B162F1E9763CD0044B677 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F06B15DF1E975B810044B677 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F06B15DE1E975B810044B677 /* LZHGRControl.app */,
+				F06B15F71E975B810044B677 /* LZHGRControlTests.xctest */,
+				F06B16021E975B810044B677 /* LZHGRControlUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F06B15E01E975B810044B677 /* LZHGRControl */ = {
+			isa = PBXGroup;
+			children = (
+				F06B16321E9764240044B677 /* AsyncUdpSocket */,
+				F06B16221E97608A0044B677 /* LZPch */,
+				F06B161E1E97608A0044B677 /* LZMain */,
+				F06B16141E97608A0044B677 /* LZAircon */,
+				F06B16191E97608A0044B677 /* LZLights */,
+				F06B16231E97608A0044B677 /* LZServer */,
+				F06B16281E97608A0044B677 /* LZSet */,
+				F06B162E1E97636D0044B677 /* LZImages */,
+				F06B162D1E97608A0044B677 /* Others */,
+				F06B15E41E975B810044B677 /* AppDelegate.h */,
+				F06B15E51E975B810044B677 /* AppDelegate.m */,
+				F06B15EA1E975B810044B677 /* Main.storyboard */,
+				F06B15ED1E975B810044B677 /* Assets.xcassets */,
+				F06B15EF1E975B810044B677 /* LaunchScreen.storyboard */,
+				F06B15F21E975B810044B677 /* Info.plist */,
+				F06B15E11E975B810044B677 /* Supporting Files */,
+			);
+			path = LZHGRControl;
+			sourceTree = "<group>";
+		};
+		F06B15E11E975B810044B677 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F06B15E21E975B810044B677 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F06B15FA1E975B810044B677 /* LZHGRControlTests */ = {
+			isa = PBXGroup;
+			children = (
+				F06B15FB1E975B810044B677 /* LZHGRControlTests.m */,
+				F06B15FD1E975B810044B677 /* Info.plist */,
+			);
+			path = LZHGRControlTests;
+			sourceTree = "<group>";
+		};
+		F06B16051E975B810044B677 /* LZHGRControlUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F06B16061E975B810044B677 /* LZHGRControlUITests.m */,
+				F06B16081E975B810044B677 /* Info.plist */,
+			);
+			path = LZHGRControlUITests;
+			sourceTree = "<group>";
+		};
+		F06B16141E97608A0044B677 /* LZAircon */ = {
+			isa = PBXGroup;
+			children = (
+				F06B16151E97608A0044B677 /* AirconControllers */,
+				F06B16161E97608A0044B677 /* AirconModel */,
+				F06B16171E97608A0044B677 /* AirconView */,
+				F06B16181E97608A0044B677 /* AirconXib */,
+			);
+			path = LZAircon;
+			sourceTree = "<group>";
+		};
+		F06B16151E97608A0044B677 /* AirconControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F06B163A1E9765BE0044B677 /* AirconViewController.h */,
+				F06B163B1E9765BE0044B677 /* AirconViewController.m */,
+			);
+			path = AirconControllers;
+			sourceTree = "<group>";
+		};
+		F06B16161E97608A0044B677 /* AirconModel */ = {
+			isa = PBXGroup;
+			children = (
+				F06B16721E9768330044B677 /* Aircon.h */,
+				F06B16731E9768330044B677 /* Aircon.m */,
+			);
+			path = AirconModel;
+			sourceTree = "<group>";
+		};
+		F06B16171E97608A0044B677 /* AirconView */ = {
+			isa = PBXGroup;
+			children = (
+				F06B16511E9767580044B677 /* AirconKeyboardView.h */,
+				F06B16521E9767580044B677 /* AirconKeyboardView.m */,
+			);
+			path = AirconView;
+			sourceTree = "<group>";
+		};
+		F06B16181E97608A0044B677 /* AirconXib */ = {
+			isa = PBXGroup;
+			children = (
+				F06B167B1E97686A0044B677 /* AirconKeyboardView.xib */,
+			);
+			path = AirconXib;
+			sourceTree = "<group>";
+		};
+		F06B16191E97608A0044B677 /* LZLights */ = {
+			isa = PBXGroup;
+			children = (
+				F06B161A1E97608A0044B677 /* LightsControllers */,
+				F06B161B1E97608A0044B677 /* LightsModel */,
+				F06B161C1E97608A0044B677 /* LightsView */,
+				F06B161D1E97608A0044B677 /* LightsXib */,
+			);
+			path = LZLights;
+			sourceTree = "<group>";
+		};
+		F06B161A1E97608A0044B677 /* LightsControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F06B163D1E9765D60044B677 /* LightsViewController.h */,
+				F06B163E1E9765D60044B677 /* LightsViewController.m */,
+			);
+			path = LightsControllers;
+			sourceTree = "<group>";
+		};
+		F06B161B1E97608A0044B677 /* LightsModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LightsModel;
+			sourceTree = "<group>";
+		};
+		F06B161C1E97608A0044B677 /* LightsView */ = {
+			isa = PBXGroup;
+			children = (
+				F06B166F1E9768150044B677 /* ToletLTView.h */,
+				F06B16701E9768150044B677 /* ToletLTView.m */,
+				F06B16541E9767960044B677 /* BedroomLTView.h */,
+				F06B16551E9767960044B677 /* BedroomLTView.m */,
+				F06B16561E9767960044B677 /* CloakroomLTView.h */,
+				F06B16571E9767960044B677 /* CloakroomLTView.m */,
+				F06B16581E9767960044B677 /* GuestBathroomLTView.h */,
+				F06B16591E9767960044B677 /* GuestBathroomLTView.m */,
+				F06B165A1E9767960044B677 /* MainLampLTView.h */,
+				F06B165B1E9767960044B677 /* MainLampLTView.m */,
+				F06B165C1E9767960044B677 /* NavigationBarView.h */,
+				F06B165D1E9767960044B677 /* NavigationBarView.m */,
+				F06B165E1E9767960044B677 /* OverAllControlView.h */,
+				F06B165F1E9767960044B677 /* OverAllControlView.m */,
+			);
+			path = LightsView;
+			sourceTree = "<group>";
+		};
+		F06B161D1E97608A0044B677 /* LightsXib */ = {
+			isa = PBXGroup;
+			children = (
+				F06B167F1E9768B30044B677 /* OverAllControlView.xib */,
+				F06B167D1E9768A50044B677 /* NavigationBarView.xib */,
+			);
+			path = LightsXib;
+			sourceTree = "<group>";
+		};
+		F06B161E1E97608A0044B677 /* LZMain */ = {
+			isa = PBXGroup;
+			children = (
+				F06B161F1E97608A0044B677 /* MainControllers */,
+				F06B16201E97608A0044B677 /* MainModel */,
+				F06B16211E97608A0044B677 /* MainView */,
+				F06B16501E9766C30044B677 /* MainXib */,
+			);
+			path = LZMain;
+			sourceTree = "<group>";
+		};
+		F06B161F1E97608A0044B677 /* MainControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F06B16371E9765A90044B677 /* MainViewController.h */,
+				F06B16381E9765A90044B677 /* MainViewController.m */,
+			);
+			path = MainControllers;
+			sourceTree = "<group>";
+		};
+		F06B16201E97608A0044B677 /* MainModel */ = {
+			isa = PBXGroup;
+			children = (
+				F06B16781E9768510044B677 /* EquipmentInfo.h */,
+				F06B16791E9768510044B677 /* EquipmentInfo.m */,
+				F06B16751E9768410044B677 /* EquipmentInfoManage.h */,
+				F06B16761E9768410044B677 /* EquipmentInfoManage.m */,
+			);
+			path = MainModel;
+			sourceTree = "<group>";
+		};
+		F06B16211E97608A0044B677 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				F06B166C1E9768030044B677 /* TitleBarView.h */,
+				F06B166D1E9768030044B677 /* TitleBarView.m */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		F06B16221E97608A0044B677 /* LZPch */ = {
+			isa = PBXGroup;
+			children = (
+				F06B16361E97644C0044B677 /* HGRPrefixHeader.pch */,
+			);
+			path = LZPch;
+			sourceTree = "<group>";
+		};
+		F06B16231E97608A0044B677 /* LZServer */ = {
+			isa = PBXGroup;
+			children = (
+				F06B16241E97608A0044B677 /* ServerControllers */,
+				F06B16251E97608A0044B677 /* ServerModel */,
+				F06B16261E97608A0044B677 /* ServerView */,
+				F06B16271E97608A0044B677 /* ServerXib */,
+			);
+			path = LZServer;
+			sourceTree = "<group>";
+		};
+		F06B16241E97608A0044B677 /* ServerControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F06B16401E9765EA0044B677 /* ServerViewController.h */,
+				F06B16411E9765EA0044B677 /* ServerViewController.m */,
+			);
+			path = ServerControllers;
+			sourceTree = "<group>";
+		};
+		F06B16251E97608A0044B677 /* ServerModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ServerModel;
+			sourceTree = "<group>";
+		};
+		F06B16261E97608A0044B677 /* ServerView */ = {
+			isa = PBXGroup;
+			children = (
+				F06B16661E9767B10044B677 /* ServerKeyboardView.h */,
+				F06B16671E9767B10044B677 /* ServerKeyboardView.m */,
+			);
+			path = ServerView;
+			sourceTree = "<group>";
+		};
+		F06B16271E97608A0044B677 /* ServerXib */ = {
+			isa = PBXGroup;
+			children = (
+				F06B16811E9768BF0044B677 /* ServerKeyboardView.xib */,
+			);
+			path = ServerXib;
+			sourceTree = "<group>";
+		};
+		F06B16281E97608A0044B677 /* LZSet */ = {
+			isa = PBXGroup;
+			children = (
+				F06B16291E97608A0044B677 /* SetControllers */,
+				F06B162A1E97608A0044B677 /* SetModel */,
+				F06B162B1E97608A0044B677 /* SetView */,
+				F06B162C1E97608A0044B677 /* SetXib */,
+			);
+			path = LZSet;
+			sourceTree = "<group>";
+		};
+		F06B16291E97608A0044B677 /* SetControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F06B16431E9765FA0044B677 /* SetViewController.h */,
+				F06B16441E9765FA0044B677 /* SetViewController.m */,
+			);
+			path = SetControllers;
+			sourceTree = "<group>";
+		};
+		F06B162A1E97608A0044B677 /* SetModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SetModel;
+			sourceTree = "<group>";
+		};
+		F06B162B1E97608A0044B677 /* SetView */ = {
+			isa = PBXGroup;
+			children = (
+				F06B16691E9767DB0044B677 /* SetKeyboardView.h */,
+				F06B166A1E9767DB0044B677 /* SetKeyboardView.m */,
+			);
+			path = SetView;
+			sourceTree = "<group>";
+		};
+		F06B162C1E97608A0044B677 /* SetXib */ = {
+			isa = PBXGroup;
+			children = (
+				F06B16831E9768CC0044B677 /* SetKeyboardView.xib */,
+			);
+			path = SetXib;
+			sourceTree = "<group>";
+		};
+		F06B162D1E97608A0044B677 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				F06B164E1E97665C0044B677 /* EquipmentInfoList.plist */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		F06B162E1E97636D0044B677 /* LZImages */ = {
+			isa = PBXGroup;
+			children = (
+				F06B16461E97661B0044B677 /* EquipmentImages */,
+				F06B16491E97661B0044B677 /* MainViewBackground */,
+			);
+			path = LZImages;
+			sourceTree = "<group>";
+		};
+		F06B162F1E9763CD0044B677 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F06B16301E9763CD0044B677 /* CFNetwork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F06B16321E9764240044B677 /* AsyncUdpSocket */ = {
+			isa = PBXGroup;
+			children = (
+				F06B16331E9764240044B677 /* AsyncUdpSocket.h */,
+				F06B16341E9764240044B677 /* AsyncUdpSocket.m */,
+			);
+			path = AsyncUdpSocket;
+			sourceTree = "<group>";
+		};
+		F06B16461E97661B0044B677 /* EquipmentImages */ = {
+			isa = PBXGroup;
+			children = (
+				F06B16471E97661B0044B677 /* light.png */,
+				F06B16481E97661B0044B677 /* server.png */,
+			);
+			path = EquipmentImages;
+			sourceTree = "<group>";
+		};
+		F06B16491E97661B0044B677 /* MainViewBackground */ = {
+			isa = PBXGroup;
+			children = (
+				F06B164A1E97661B0044B677 /* main_bk.jpg */,
+			);
+			path = MainViewBackground;
+			sourceTree = "<group>";
+		};
+		F06B16501E9766C30044B677 /* MainXib */ = {
+			isa = PBXGroup;
+			children = (
+				F06B16851E9768E20044B677 /* TitleBarView.xib */,
+			);
+			path = MainXib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F06B15DD1E975B810044B677 /* LZHGRControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F06B160B1E975B810044B677 /* Build configuration list for PBXNativeTarget "LZHGRControl" */;
+			buildPhases = (
+				F06B15DA1E975B810044B677 /* Sources */,
+				F06B15DB1E975B810044B677 /* Frameworks */,
+				F06B15DC1E975B810044B677 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LZHGRControl;
+			productName = LZHGRControl;
+			productReference = F06B15DE1E975B810044B677 /* LZHGRControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F06B15F61E975B810044B677 /* LZHGRControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F06B160E1E975B810044B677 /* Build configuration list for PBXNativeTarget "LZHGRControlTests" */;
+			buildPhases = (
+				F06B15F31E975B810044B677 /* Sources */,
+				F06B15F41E975B810044B677 /* Frameworks */,
+				F06B15F51E975B810044B677 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F06B15F91E975B810044B677 /* PBXTargetDependency */,
+			);
+			name = LZHGRControlTests;
+			productName = LZHGRControlTests;
+			productReference = F06B15F71E975B810044B677 /* LZHGRControlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F06B16011E975B810044B677 /* LZHGRControlUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F06B16111E975B810044B677 /* Build configuration list for PBXNativeTarget "LZHGRControlUITests" */;
+			buildPhases = (
+				F06B15FE1E975B810044B677 /* Sources */,
+				F06B15FF1E975B810044B677 /* Frameworks */,
+				F06B16001E975B810044B677 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F06B16041E975B810044B677 /* PBXTargetDependency */,
+			);
+			name = LZHGRControlUITests;
+			productName = LZHGRControlUITests;
+			productReference = F06B16021E975B810044B677 /* LZHGRControlUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F06B15D61E975B800044B677 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = yavatop;
+				TargetAttributes = {
+					F06B15DD1E975B810044B677 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = E47JKL8BW9;
+						ProvisioningStyle = Automatic;
+					};
+					F06B15F61E975B810044B677 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = E47JKL8BW9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F06B15DD1E975B810044B677;
+					};
+					F06B16011E975B810044B677 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = E47JKL8BW9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F06B15DD1E975B810044B677;
+					};
+				};
+			};
+			buildConfigurationList = F06B15D91E975B800044B677 /* Build configuration list for PBXProject "LZHGRControl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F06B15D51E975B800044B677;
+			productRefGroup = F06B15DF1E975B810044B677 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F06B15DD1E975B810044B677 /* LZHGRControl */,
+				F06B15F61E975B810044B677 /* LZHGRControlTests */,
+				F06B16011E975B810044B677 /* LZHGRControlUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F06B15DC1E975B810044B677 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F06B164B1E97661B0044B677 /* light.png in Resources */,
+				F06B15F11E975B810044B677 /* LaunchScreen.storyboard in Resources */,
+				F06B16821E9768BF0044B677 /* ServerKeyboardView.xib in Resources */,
+				F06B15EE1E975B810044B677 /* Assets.xcassets in Resources */,
+				F06B16841E9768CC0044B677 /* SetKeyboardView.xib in Resources */,
+				F06B164C1E97661B0044B677 /* server.png in Resources */,
+				F06B16801E9768B30044B677 /* OverAllControlView.xib in Resources */,
+				F06B16861E9768E20044B677 /* TitleBarView.xib in Resources */,
+				F06B167E1E9768A50044B677 /* NavigationBarView.xib in Resources */,
+				F06B15EC1E975B810044B677 /* Main.storyboard in Resources */,
+				F06B164D1E97661B0044B677 /* main_bk.jpg in Resources */,
+				F06B164F1E97665C0044B677 /* EquipmentInfoList.plist in Resources */,
+				F06B167C1E97686A0044B677 /* AirconKeyboardView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F06B15F51E975B810044B677 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F06B16001E975B810044B677 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F06B15DA1E975B810044B677 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F06B166B1E9767DB0044B677 /* SetKeyboardView.m in Sources */,
+				F06B163C1E9765BE0044B677 /* AirconViewController.m in Sources */,
+				F06B167A1E9768510044B677 /* EquipmentInfo.m in Sources */,
+				F06B16451E9765FA0044B677 /* SetViewController.m in Sources */,
+				F06B16681E9767B10044B677 /* ServerKeyboardView.m in Sources */,
+				F06B16351E9764240044B677 /* AsyncUdpSocket.m in Sources */,
+				F06B15E61E975B810044B677 /* AppDelegate.m in Sources */,
+				F06B163F1E9765D60044B677 /* LightsViewController.m in Sources */,
+				F06B16741E9768330044B677 /* Aircon.m in Sources */,
+				F06B16651E9767960044B677 /* OverAllControlView.m in Sources */,
+				F06B16631E9767960044B677 /* MainLampLTView.m in Sources */,
+				F06B166E1E9768030044B677 /* TitleBarView.m in Sources */,
+				F06B16641E9767960044B677 /* NavigationBarView.m in Sources */,
+				F06B15E31E975B810044B677 /* main.m in Sources */,
+				F06B16391E9765A90044B677 /* MainViewController.m in Sources */,
+				F06B16621E9767960044B677 /* GuestBathroomLTView.m in Sources */,
+				F06B16711E9768150044B677 /* ToletLTView.m in Sources */,
+				F06B16611E9767960044B677 /* CloakroomLTView.m in Sources */,
+				F06B16601E9767960044B677 /* BedroomLTView.m in Sources */,
+				F06B16771E9768410044B677 /* EquipmentInfoManage.m in Sources */,
+				F06B16531E9767580044B677 /* AirconKeyboardView.m in Sources */,
+				F06B16421E9765EA0044B677 /* ServerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F06B15F31E975B810044B677 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F06B15FC1E975B810044B677 /* LZHGRControlTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F06B15FE1E975B810044B677 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F06B16071E975B810044B677 /* LZHGRControlUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F06B15F91E975B810044B677 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F06B15DD1E975B810044B677 /* LZHGRControl */;
+			targetProxy = F06B15F81E975B810044B677 /* PBXContainerItemProxy */;
+		};
+		F06B16041E975B810044B677 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F06B15DD1E975B810044B677 /* LZHGRControl */;
+			targetProxy = F06B16031E975B810044B677 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F06B15EA1E975B810044B677 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F06B15EB1E975B810044B677 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F06B15EF1E975B810044B677 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F06B15F01E975B810044B677 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F06B16091E975B810044B677 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F06B160A1E975B810044B677 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F06B160C1E975B810044B677 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E47JKL8BW9;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/jony/MyAPP/酒店客房/LZHGRControl/LZHGRControl/LZPch/HGRPrefixHeader.pch";
+				INFOPLIST_FILE = LZHGRControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yavatop.LZHGRControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F06B160D1E975B810044B677 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E47JKL8BW9;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/jony/MyAPP/酒店客房/LZHGRControl/LZHGRControl/LZPch/HGRPrefixHeader.pch";
+				INFOPLIST_FILE = LZHGRControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yavatop.LZHGRControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F06B160F1E975B810044B677 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = E47JKL8BW9;
+				INFOPLIST_FILE = LZHGRControlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yavatop.LZHGRControlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LZHGRControl.app/LZHGRControl";
+			};
+			name = Debug;
+		};
+		F06B16101E975B810044B677 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = E47JKL8BW9;
+				INFOPLIST_FILE = LZHGRControlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yavatop.LZHGRControlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LZHGRControl.app/LZHGRControl";
+			};
+			name = Release;
+		};
+		F06B16121E975B810044B677 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = E47JKL8BW9;
+				INFOPLIST_FILE = LZHGRControlUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yavatop.LZHGRControlUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LZHGRControl;
+			};
+			name = Debug;
+		};
+		F06B16131E975B810044B677 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = E47JKL8BW9;
+				INFOPLIST_FILE = LZHGRControlUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yavatop.LZHGRControlUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LZHGRControl;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F06B15D91E975B800044B677 /* Build configuration list for PBXProject "LZHGRControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F06B16091E975B810044B677 /* Debug */,
+				F06B160A1E975B810044B677 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F06B160B1E975B810044B677 /* Build configuration list for PBXNativeTarget "LZHGRControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F06B160C1E975B810044B677 /* Debug */,
+				F06B160D1E975B810044B677 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F06B160E1E975B810044B677 /* Build configuration list for PBXNativeTarget "LZHGRControlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F06B160F1E975B810044B677 /* Debug */,
+				F06B16101E975B810044B677 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F06B16111E975B810044B677 /* Build configuration list for PBXNativeTarget "LZHGRControlUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F06B16121E975B810044B677 /* Debug */,
+				F06B16131E975B810044B677 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F06B15D61E975B800044B677 /* Project object */;
+}
