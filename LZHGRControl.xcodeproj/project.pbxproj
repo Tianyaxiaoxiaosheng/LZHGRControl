@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		F06B15E31E975B810044B677 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B15E21E975B810044B677 /* main.m */; };
 		F06B15E61E975B810044B677 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B15E51E975B810044B677 /* AppDelegate.m */; };
-		F06B15EC1E975B810044B677 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F06B15EA1E975B810044B677 /* Main.storyboard */; };
 		F06B15EE1E975B810044B677 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F06B15ED1E975B810044B677 /* Assets.xcassets */; };
 		F06B15F11E975B810044B677 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F06B15EF1E975B810044B677 /* LaunchScreen.storyboard */; };
 		F06B15FC1E975B810044B677 /* LZHGRControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B15FB1E975B810044B677 /* LZHGRControlTests.m */; };
@@ -45,6 +44,7 @@
 		F06B16821E9768BF0044B677 /* ServerKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F06B16811E9768BF0044B677 /* ServerKeyboardView.xib */; };
 		F06B16841E9768CC0044B677 /* SetKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F06B16831E9768CC0044B677 /* SetKeyboardView.xib */; };
 		F06B16861E9768E20044B677 /* TitleBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F06B16851E9768E20044B677 /* TitleBarView.xib */; };
+		F06B16891E976FBB0044B677 /* DMCore.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B16881E976FBB0044B677 /* DMCore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +69,6 @@
 		F06B15E21E975B810044B677 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F06B15E41E975B810044B677 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F06B15E51E975B810044B677 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F06B15EB1E975B810044B677 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F06B15ED1E975B810044B677 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F06B15F01E975B810044B677 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F06B15F21E975B810044B677 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -131,6 +130,8 @@
 		F06B16811E9768BF0044B677 /* ServerKeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServerKeyboardView.xib; sourceTree = "<group>"; };
 		F06B16831E9768CC0044B677 /* SetKeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetKeyboardView.xib; sourceTree = "<group>"; };
 		F06B16851E9768E20044B677 /* TitleBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleBarView.xib; sourceTree = "<group>"; };
+		F06B16871E976FBB0044B677 /* DMCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMCore.h; sourceTree = "<group>"; };
+		F06B16881E976FBB0044B677 /* DMCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMCore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,7 +195,6 @@
 				F06B162D1E97608A0044B677 /* Others */,
 				F06B15E41E975B810044B677 /* AppDelegate.h */,
 				F06B15E51E975B810044B677 /* AppDelegate.m */,
-				F06B15EA1E975B810044B677 /* Main.storyboard */,
 				F06B15ED1E975B810044B677 /* Assets.xcassets */,
 				F06B15EF1E975B810044B677 /* LaunchScreen.storyboard */,
 				F06B15F21E975B810044B677 /* Info.plist */,
@@ -472,6 +472,8 @@
 			isa = PBXGroup;
 			children = (
 				F06B164E1E97665C0044B677 /* EquipmentInfoList.plist */,
+				F06B16871E976FBB0044B677 /* DMCore.h */,
+				F06B16881E976FBB0044B677 /* DMCore.m */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -645,7 +647,6 @@
 				F06B16801E9768B30044B677 /* OverAllControlView.xib in Resources */,
 				F06B16861E9768E20044B677 /* TitleBarView.xib in Resources */,
 				F06B167E1E9768A50044B677 /* NavigationBarView.xib in Resources */,
-				F06B15EC1E975B810044B677 /* Main.storyboard in Resources */,
 				F06B164D1E97661B0044B677 /* main_bk.jpg in Resources */,
 				F06B164F1E97665C0044B677 /* EquipmentInfoList.plist in Resources */,
 				F06B167C1E97686A0044B677 /* AirconKeyboardView.xib in Resources */,
@@ -694,6 +695,7 @@
 				F06B16601E9767960044B677 /* BedroomLTView.m in Sources */,
 				F06B16771E9768410044B677 /* EquipmentInfoManage.m in Sources */,
 				F06B16531E9767580044B677 /* AirconKeyboardView.m in Sources */,
+				F06B16891E976FBB0044B677 /* DMCore.m in Sources */,
 				F06B16421E9765EA0044B677 /* ServerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -730,14 +732,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F06B15EA1E975B810044B677 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F06B15EB1E975B810044B677 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F06B15EF1E975B810044B677 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

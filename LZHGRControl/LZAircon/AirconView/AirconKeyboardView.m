@@ -72,6 +72,10 @@
 }
 
 - (IBAction)temperatureAdd:(id)sender {
+    
+    //test sharedDMCore
+    DMCore *sharedDMCore = [DMCore sharedDMCore];
+    NSLog(@"%ld",sharedDMCore.BRAircon.temperature);
     self.tempAircon.temperature++;
     [self initViewWithAircon:self.tempAircon];
 }
