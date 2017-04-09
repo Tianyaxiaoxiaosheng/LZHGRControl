@@ -26,10 +26,11 @@
     }
     return self;
 }
-- (IBAction)swValueChanged:(id)sender {
+- (IBAction)swValueChanged:(id)sender{
+    [DMCore sharedDMCore].PLAircon.temperature++;
     if ([(UISwitch *)sender isOn]) {
         NSLog(@"switch ON");
-    }else{
+     }else{
         NSLog(@"switch OFF");
     }
 }

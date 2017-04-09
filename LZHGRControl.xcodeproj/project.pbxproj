@@ -45,6 +45,8 @@
 		F06B16841E9768CC0044B677 /* SetKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F06B16831E9768CC0044B677 /* SetKeyboardView.xib */; };
 		F06B16861E9768E20044B677 /* TitleBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F06B16851E9768E20044B677 /* TitleBarView.xib */; };
 		F06B16891E976FBB0044B677 /* DMCore.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B16881E976FBB0044B677 /* DMCore.m */; };
+		F06B168C1E9786EB0044B677 /* ACNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B168B1E9786EB0044B677 /* ACNavigationView.m */; };
+		F06B168E1E97904E0044B677 /* ACNavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F06B168D1E97904E0044B677 /* ACNavigationView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +134,9 @@
 		F06B16851E9768E20044B677 /* TitleBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleBarView.xib; sourceTree = "<group>"; };
 		F06B16871E976FBB0044B677 /* DMCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMCore.h; sourceTree = "<group>"; };
 		F06B16881E976FBB0044B677 /* DMCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMCore.m; sourceTree = "<group>"; };
+		F06B168A1E9786EB0044B677 /* ACNavigationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACNavigationView.h; sourceTree = "<group>"; };
+		F06B168B1E9786EB0044B677 /* ACNavigationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACNavigationView.m; sourceTree = "<group>"; };
+		F06B168D1E97904E0044B677 /* ACNavigationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ACNavigationView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +268,8 @@
 			children = (
 				F06B16511E9767580044B677 /* AirconKeyboardView.h */,
 				F06B16521E9767580044B677 /* AirconKeyboardView.m */,
+				F06B168A1E9786EB0044B677 /* ACNavigationView.h */,
+				F06B168B1E9786EB0044B677 /* ACNavigationView.m */,
 			);
 			path = AirconView;
 			sourceTree = "<group>";
@@ -271,6 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				F06B167B1E97686A0044B677 /* AirconKeyboardView.xib */,
+				F06B168D1E97904E0044B677 /* ACNavigationView.xib */,
 			);
 			path = AirconXib;
 			sourceTree = "<group>";
@@ -646,6 +654,7 @@
 				F06B164C1E97661B0044B677 /* server.png in Resources */,
 				F06B16801E9768B30044B677 /* OverAllControlView.xib in Resources */,
 				F06B16861E9768E20044B677 /* TitleBarView.xib in Resources */,
+				F06B168E1E97904E0044B677 /* ACNavigationView.xib in Resources */,
 				F06B167E1E9768A50044B677 /* NavigationBarView.xib in Resources */,
 				F06B164D1E97661B0044B677 /* main_bk.jpg in Resources */,
 				F06B164F1E97665C0044B677 /* EquipmentInfoList.plist in Resources */,
@@ -694,6 +703,7 @@
 				F06B16611E9767960044B677 /* CloakroomLTView.m in Sources */,
 				F06B16601E9767960044B677 /* BedroomLTView.m in Sources */,
 				F06B16771E9768410044B677 /* EquipmentInfoManage.m in Sources */,
+				F06B168C1E9786EB0044B677 /* ACNavigationView.m in Sources */,
 				F06B16531E9767580044B677 /* AirconKeyboardView.m in Sources */,
 				F06B16891E976FBB0044B677 /* DMCore.m in Sources */,
 				F06B16421E9765EA0044B677 /* ServerViewController.m in Sources */,

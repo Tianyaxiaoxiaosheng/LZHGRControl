@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface AirconKeyboardView : UIView
-@property (nonatomic, strong) Aircon *parlorAC;
-@property (nonatomic, strong) Aircon *bedroomAC;
+@property (weak, nonatomic) IBOutlet UILabel *temperatureLabel;
 
--(instancetype)initWithFrame:(CGRect)frame andParlorAC:(Aircon *)parlorAC BedroomAC:(Aircon *)bedroomAC;
+
+- (instancetype)initWithFrame:(CGRect)frame andAircon:(Aircon *)aircon;
 @end
