@@ -29,7 +29,7 @@
 		F06B16611E9767960044B677 /* CloakroomLTView.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B16571E9767960044B677 /* CloakroomLTView.m */; };
 		F06B16621E9767960044B677 /* GuestBathroomLTView.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B16591E9767960044B677 /* GuestBathroomLTView.m */; };
 		F06B16631E9767960044B677 /* MainLampLTView.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B165B1E9767960044B677 /* MainLampLTView.m */; };
-		F06B16641E9767960044B677 /* NavigationBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B165D1E9767960044B677 /* NavigationBarView.m */; };
+		F06B16641E9767960044B677 /* LTNavigationBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B165D1E9767960044B677 /* LTNavigationBarView.m */; };
 		F06B16651E9767960044B677 /* OverAllControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B165F1E9767960044B677 /* OverAllControlView.m */; };
 		F06B16681E9767B10044B677 /* ServerKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B16671E9767B10044B677 /* ServerKeyboardView.m */; };
 		F06B166B1E9767DB0044B677 /* SetKeyboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B166A1E9767DB0044B677 /* SetKeyboardView.m */; };
@@ -39,7 +39,7 @@
 		F06B16771E9768410044B677 /* EquipmentInfoManage.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B16761E9768410044B677 /* EquipmentInfoManage.m */; };
 		F06B167A1E9768510044B677 /* EquipmentInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B16791E9768510044B677 /* EquipmentInfo.m */; };
 		F06B167C1E97686A0044B677 /* AirconKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F06B167B1E97686A0044B677 /* AirconKeyboardView.xib */; };
-		F06B167E1E9768A50044B677 /* NavigationBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F06B167D1E9768A50044B677 /* NavigationBarView.xib */; };
+		F06B167E1E9768A50044B677 /* LTNavigationBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F06B167D1E9768A50044B677 /* LTNavigationBarView.xib */; };
 		F06B16801E9768B30044B677 /* OverAllControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F06B167F1E9768B30044B677 /* OverAllControlView.xib */; };
 		F06B16821E9768BF0044B677 /* ServerKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F06B16811E9768BF0044B677 /* ServerKeyboardView.xib */; };
 		F06B16841E9768CC0044B677 /* SetKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F06B16831E9768CC0044B677 /* SetKeyboardView.xib */; };
@@ -108,8 +108,8 @@
 		F06B16591E9767960044B677 /* GuestBathroomLTView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuestBathroomLTView.m; sourceTree = "<group>"; };
 		F06B165A1E9767960044B677 /* MainLampLTView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainLampLTView.h; sourceTree = "<group>"; };
 		F06B165B1E9767960044B677 /* MainLampLTView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainLampLTView.m; sourceTree = "<group>"; };
-		F06B165C1E9767960044B677 /* NavigationBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationBarView.h; sourceTree = "<group>"; };
-		F06B165D1E9767960044B677 /* NavigationBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBarView.m; sourceTree = "<group>"; };
+		F06B165C1E9767960044B677 /* LTNavigationBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTNavigationBarView.h; sourceTree = "<group>"; };
+		F06B165D1E9767960044B677 /* LTNavigationBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTNavigationBarView.m; sourceTree = "<group>"; };
 		F06B165E1E9767960044B677 /* OverAllControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverAllControlView.h; sourceTree = "<group>"; };
 		F06B165F1E9767960044B677 /* OverAllControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverAllControlView.m; sourceTree = "<group>"; };
 		F06B16661E9767B10044B677 /* ServerKeyboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerKeyboardView.h; sourceTree = "<group>"; };
@@ -127,7 +127,7 @@
 		F06B16781E9768510044B677 /* EquipmentInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EquipmentInfo.h; sourceTree = "<group>"; };
 		F06B16791E9768510044B677 /* EquipmentInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EquipmentInfo.m; sourceTree = "<group>"; };
 		F06B167B1E97686A0044B677 /* AirconKeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AirconKeyboardView.xib; sourceTree = "<group>"; };
-		F06B167D1E9768A50044B677 /* NavigationBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigationBarView.xib; sourceTree = "<group>"; };
+		F06B167D1E9768A50044B677 /* LTNavigationBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LTNavigationBarView.xib; sourceTree = "<group>"; };
 		F06B167F1E9768B30044B677 /* OverAllControlView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverAllControlView.xib; sourceTree = "<group>"; };
 		F06B16811E9768BF0044B677 /* ServerKeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServerKeyboardView.xib; sourceTree = "<group>"; };
 		F06B16831E9768CC0044B677 /* SetKeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetKeyboardView.xib; sourceTree = "<group>"; };
@@ -323,8 +323,8 @@
 				F06B16591E9767960044B677 /* GuestBathroomLTView.m */,
 				F06B165A1E9767960044B677 /* MainLampLTView.h */,
 				F06B165B1E9767960044B677 /* MainLampLTView.m */,
-				F06B165C1E9767960044B677 /* NavigationBarView.h */,
-				F06B165D1E9767960044B677 /* NavigationBarView.m */,
+				F06B165C1E9767960044B677 /* LTNavigationBarView.h */,
+				F06B165D1E9767960044B677 /* LTNavigationBarView.m */,
 				F06B165E1E9767960044B677 /* OverAllControlView.h */,
 				F06B165F1E9767960044B677 /* OverAllControlView.m */,
 			);
@@ -335,7 +335,7 @@
 			isa = PBXGroup;
 			children = (
 				F06B167F1E9768B30044B677 /* OverAllControlView.xib */,
-				F06B167D1E9768A50044B677 /* NavigationBarView.xib */,
+				F06B167D1E9768A50044B677 /* LTNavigationBarView.xib */,
 			);
 			path = LightsXib;
 			sourceTree = "<group>";
@@ -655,7 +655,7 @@
 				F06B16801E9768B30044B677 /* OverAllControlView.xib in Resources */,
 				F06B16861E9768E20044B677 /* TitleBarView.xib in Resources */,
 				F06B168E1E97904E0044B677 /* ACNavigationView.xib in Resources */,
-				F06B167E1E9768A50044B677 /* NavigationBarView.xib in Resources */,
+				F06B167E1E9768A50044B677 /* LTNavigationBarView.xib in Resources */,
 				F06B164D1E97661B0044B677 /* main_bk.jpg in Resources */,
 				F06B164F1E97665C0044B677 /* EquipmentInfoList.plist in Resources */,
 				F06B167C1E97686A0044B677 /* AirconKeyboardView.xib in Resources */,
@@ -695,7 +695,7 @@
 				F06B16651E9767960044B677 /* OverAllControlView.m in Sources */,
 				F06B16631E9767960044B677 /* MainLampLTView.m in Sources */,
 				F06B166E1E9768030044B677 /* TitleBarView.m in Sources */,
-				F06B16641E9767960044B677 /* NavigationBarView.m in Sources */,
+				F06B16641E9767960044B677 /* LTNavigationBarView.m in Sources */,
 				F06B15E31E975B810044B677 /* main.m in Sources */,
 				F06B16391E9765A90044B677 /* MainViewController.m in Sources */,
 				F06B16621E9767960044B677 /* GuestBathroomLTView.m in Sources */,

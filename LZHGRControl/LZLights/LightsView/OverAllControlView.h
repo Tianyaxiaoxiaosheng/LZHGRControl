@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol OverAllControlViewDelegate <NSObject>
+
+@optional
+- (void)OverAllSwitchONAndOFF:(NSInteger)tag;
+
+@end
+
 @interface OverAllControlView : UIView
+@property (nonatomic, weak) id<OverAllControlViewDelegate>delegate;
 
 @end

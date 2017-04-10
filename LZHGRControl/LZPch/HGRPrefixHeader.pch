@@ -34,7 +34,7 @@
 #import "ACNavigationView.h"
 #import "AirconKeyboardView.h"
 #import "OverAllControlView.h"
-#import "NavigationBarView.h"
+#import "LTNavigationBarView.h"
 
 #import "BedroomLTView.h"
 #import "MainLampLTView.h"

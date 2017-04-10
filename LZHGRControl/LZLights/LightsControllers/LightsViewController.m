@@ -8,7 +8,7 @@
 
 #import "LightsViewController.h"
 
-@interface LightsViewController ()
+@interface LightsViewController ()<LTNavigationBarViewDelegate, OverAllControlViewDelegate>
 
 @end
 
@@ -29,10 +29,12 @@
     
    
     OverAllControlView *overAllControlView = [[OverAllControlView alloc] initWithFrame:CGRectMake(OAC_VIEW_INIT_X, OAC_VIEW_INIT_Y, OAC_VIEW_WIDTH, OAC_VIEW_HEIGHT)];
+    overAllControlView.delegate = self;
     [self.view addSubview:overAllControlView];
     
-    NavigationBarView *navigationBarView = [[NavigationBarView alloc] initWithFrame:CGRectMake(NB_VIEW_INIT_X, NB_VIEW_INIT_Y, NB_VIEW_WIDTH, NB_VIEW_HEIGHT)];
-    [self.view addSubview:navigationBarView];
+    LTNavigationBarView *lTnavigationBarView = [[LTNavigationBarView alloc] initWithFrame:CGRectMake(NB_VIEW_INIT_X, NB_VIEW_INIT_Y, NB_VIEW_WIDTH, NB_VIEW_HEIGHT)];
+    lTnavigationBarView.delegate = self;
+    [self.view addSubview:lTnavigationBarView];
     
 }
 
@@ -41,6 +43,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - delegate
+
+-(void)OverAllSwitchONAndOFF:(NSInteger)tag{
+    NSLog(@"OverAllSwitchONAndOFF: %ld", tag);
+}
+
+- (void)createdKeyboardWithLTNavigationBarView:(NSInteger)tag{
+    NSLog(@"createdKeyboardWithLTNavigationBarView: %ld", tag);
+}
 /*
 #pragma mark - Navigation
 
