@@ -20,7 +20,7 @@
         self.layer.masksToBounds = YES;
         
         //初始化界面数据
-        self.bedroomACBut.backgroundColor = [UIColor colorWithRed:192/255 green:192/255 blue:192/255 alpha:0.4];
+        self.bedroomACBut.backgroundColor = [UIColor colorWithRed:192/255 green:192/255 blue:192/255 alpha:0.2];
         self.parlorACBut.enabled = NO;
     }
     return self;

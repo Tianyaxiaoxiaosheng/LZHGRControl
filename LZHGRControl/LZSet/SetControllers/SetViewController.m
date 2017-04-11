@@ -19,7 +19,7 @@
     //self.title = @"设置";
     //self.view.backgroundColor = [UIColor greenColor];
     
-    EquipmentInfo *setInfo = [[EquipmentInfoManage sharedEquipmentInfoTool] findEquipmentInfoWithName:@"空调"];
+    EquipmentInfo *setInfo = [[EquipmentInfoManage sharedEquipmentInfoTool] findEquipmentInfoWithName:@"设置"];
     TitleBarView *titleBarView = [[TitleBarView alloc] initWithFrame:CGRectMake(TITLEBAR_VIEW_INIT_X, TITLEBAR_VIEW_INIT_Y, TITLEBAR_VIEW_WIDTH, TITLEBAR_VIEW_HEIGHT) andEquipment:setInfo];
     [self.view addSubview:titleBarView];
     

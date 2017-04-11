@@ -59,7 +59,7 @@ static DMCore *sharedDMCore = nil;
 - (Aircon *)BRAircon{
     if (!_BRAircon) {
         _BRAircon = [[Aircon alloc] init];
-        _BRAircon.temperature = 50;
+        _BRAircon.temperature = -50;
     }
     return _BRAircon;
 }
