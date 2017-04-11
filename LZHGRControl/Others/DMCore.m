@@ -10,7 +10,7 @@
 
 @implementation DMCore
 
-#pragma mask-确保被创建一次
+#pragma mark-确保被创建一次
 static DMCore *sharedDMCore = nil;
 
 + (instancetype)sharedDMCore{
@@ -46,7 +46,7 @@ static DMCore *sharedDMCore = nil;
     return sharedDMCore;
 }
 
-#pragma mask-懒加载对象
+#pragma mark-懒加载对象
 //lazyload some init data
 - (Aircon *)PLAircon{
     if (!_PLAircon) {

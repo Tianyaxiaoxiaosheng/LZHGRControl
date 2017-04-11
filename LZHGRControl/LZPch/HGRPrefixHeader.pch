@@ -24,6 +24,7 @@
 //model
 #import "Aircon.h"
 #import "DMCore.h"
+#import "UDPNetwork.h"
 #import "EquipmentInfo.h"
 #import "EquipmentInfoManage.h"
 

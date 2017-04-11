@@ -47,6 +47,8 @@
 		F06B16891E976FBB0044B677 /* DMCore.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B16881E976FBB0044B677 /* DMCore.m */; };
 		F06B168C1E9786EB0044B677 /* ACNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B168B1E9786EB0044B677 /* ACNavigationView.m */; };
 		F06B168E1E97904E0044B677 /* ACNavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F06B168D1E97904E0044B677 /* ACNavigationView.xib */; };
+		F06B16911E9B64500044B677 /* UDPNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B16901E9B64500044B677 /* UDPNetwork.m */; };
+		F06B16931E9B681B0044B677 /* NetworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = F06B16921E9B681B0044B677 /* NetworkInfo.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +139,9 @@
 		F06B168A1E9786EB0044B677 /* ACNavigationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACNavigationView.h; sourceTree = "<group>"; };
 		F06B168B1E9786EB0044B677 /* ACNavigationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACNavigationView.m; sourceTree = "<group>"; };
 		F06B168D1E97904E0044B677 /* ACNavigationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ACNavigationView.xib; sourceTree = "<group>"; };
+		F06B168F1E9B64500044B677 /* UDPNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UDPNetwork.h; sourceTree = "<group>"; };
+		F06B16901E9B64500044B677 /* UDPNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UDPNetwork.m; sourceTree = "<group>"; };
+		F06B16921E9B681B0044B677 /* NetworkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NetworkInfo.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -480,8 +485,11 @@
 			isa = PBXGroup;
 			children = (
 				F06B164E1E97665C0044B677 /* EquipmentInfoList.plist */,
+				F06B16921E9B681B0044B677 /* NetworkInfo.plist */,
 				F06B16871E976FBB0044B677 /* DMCore.h */,
 				F06B16881E976FBB0044B677 /* DMCore.m */,
+				F06B168F1E9B64500044B677 /* UDPNetwork.h */,
+				F06B16901E9B64500044B677 /* UDPNetwork.m */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -655,6 +663,7 @@
 				F06B16801E9768B30044B677 /* OverAllControlView.xib in Resources */,
 				F06B16861E9768E20044B677 /* TitleBarView.xib in Resources */,
 				F06B168E1E97904E0044B677 /* ACNavigationView.xib in Resources */,
+				F06B16931E9B681B0044B677 /* NetworkInfo.plist in Resources */,
 				F06B167E1E9768A50044B677 /* LTNavigationBarView.xib in Resources */,
 				F06B164D1E97661B0044B677 /* main_bk.jpg in Resources */,
 				F06B164F1E97665C0044B677 /* EquipmentInfoList.plist in Resources */,
@@ -697,6 +706,7 @@
 				F06B166E1E9768030044B677 /* TitleBarView.m in Sources */,
 				F06B16641E9767960044B677 /* LTNavigationBarView.m in Sources */,
 				F06B15E31E975B810044B677 /* main.m in Sources */,
+				F06B16911E9B64500044B677 /* UDPNetwork.m in Sources */,
 				F06B16391E9765A90044B677 /* MainViewController.m in Sources */,
 				F06B16621E9767960044B677 /* GuestBathroomLTView.m in Sources */,
 				F06B16711E9768150044B677 /* ToletLTView.m in Sources */,
@@ -851,6 +861,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/Users/jony/MyAPP/酒店客房/LZHGRControl/LZHGRControl/LZPch/HGRPrefixHeader.pch";
 				INFOPLIST_FILE = LZHGRControl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yavatop.LZHGRControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -865,6 +876,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/Users/jony/MyAPP/酒店客房/LZHGRControl/LZHGRControl/LZPch/HGRPrefixHeader.pch";
 				INFOPLIST_FILE = LZHGRControl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yavatop.LZHGRControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";

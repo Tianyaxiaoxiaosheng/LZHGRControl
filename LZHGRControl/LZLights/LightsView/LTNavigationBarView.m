@@ -34,8 +34,8 @@
     }
     
     //初始化
-    UIButton *button = [self viewWithTag:1];
-    [self buttonClicked:button];
+    //初始化在此，导致初始过程代理协议无法执行，解决方案：代理不可行，因为需要controller那边触发，通知也可解决，最直接的方法，在那边初始化另一部分
+    [self buttonClicked:[self viewWithTag:1]];
     
     return self;
 }
@@ -53,8 +53,10 @@
         if (tempButton) {
             if (tempButton.tag != button.tag){
                 tempButton.backgroundColor = [UIColor colorWithRed:192/255 green:192/255 blue:192/255 alpha:0.4];
+                tempButton.enabled = YES;
             }else{
                 tempButton.backgroundColor = [UIColor colorWithRed:192/255 green:192/255 blue:192/255 alpha:0.0];
+                tempButton.enabled = NO;
             }
         }
     }

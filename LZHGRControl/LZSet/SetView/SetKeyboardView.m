@@ -29,7 +29,10 @@
 - (IBAction)swValueChanged:(id)sender{
     [DMCore sharedDMCore].PLAircon.temperature++;
     if ([(UISwitch *)sender isOn]) {
+        
         NSLog(@"switch ON");
+        [[UDPNetwork sharedUDPNetwork] startReceiveNetworkData];
+        
      }else{
         NSLog(@"switch OFF");
     }

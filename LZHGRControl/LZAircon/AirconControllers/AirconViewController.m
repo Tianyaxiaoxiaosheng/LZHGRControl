@@ -10,6 +10,7 @@
 
 @interface AirconViewController ()
 @property (nonatomic, strong) DMCore *sharedDMCore;
+@property (nonatomic, strong) TitleBarView *titleBarView;
 @property (nonatomic, strong) ACNavigationView *aCNavigationView;
 @property (nonatomic, strong) AirconKeyboardView *PLAirconKeyboardView;
 @property (nonatomic, strong) AirconKeyboardView *BRAirconKeyboardView;
@@ -25,6 +26,14 @@
         _sharedDMCore = [DMCore sharedDMCore];
     }
     return _sharedDMCore;
+}
+
+- (TitleBarView *)titleBarView{
+    if (!_titleBarView) {
+        EquipmentInfo *airconInfo = [[EquipmentInfoManage sharedEquipmentInfoTool] findEquipmentInfoWithName:@"空调"];
+        _titleBarView = [[TitleBarView alloc] initWithFrame:CGRectMake(TITLEBAR_VIEW_INIT_X, TITLEBAR_VIEW_INIT_Y, TITLEBAR_VIEW_WIDTH, TITLEBAR_VIEW_HEIGHT) andEquipment:airconInfo];
+    }
+    return _titleBarView;
 }
 
 //lazyload subView
@@ -69,9 +78,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    EquipmentInfo *airconInfo = [[EquipmentInfoManage sharedEquipmentInfoTool] findEquipmentInfoWithName:@"空调"];
-    TitleBarView *titleBarView = [[TitleBarView alloc] initWithFrame:CGRectMake(TITLEBAR_VIEW_INIT_X, TITLEBAR_VIEW_INIT_Y, TITLEBAR_VIEW_WIDTH, TITLEBAR_VIEW_HEIGHT) andEquipment:airconInfo];
-    [self.view addSubview:titleBarView];
+    //添加标题界面
+    [self.view addSubview:self.titleBarView];
     
     //添加整个键盘导航界面
     [self.view addSubview:self.aCNavigationView];
