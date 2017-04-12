@@ -12,6 +12,9 @@
 @property (nonatomic, strong) Aircon *PLAircon;
 @property (nonatomic, strong) Aircon *BRAircon;
 
+@property (nonatomic, strong) Cloakroom *cloakroom;
+@property (nonatomic, strong) GuestBathroom *guestBathroom;
+
 //单例模式
 + (instancetype)sharedDMCore;
 

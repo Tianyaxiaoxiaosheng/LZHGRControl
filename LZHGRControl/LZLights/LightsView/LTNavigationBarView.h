@@ -20,3 +20,10 @@
 @property (nonatomic, weak) id<LTNavigationBarViewDelegate>delegate;
 
 @end
+
+
+
+
+@interface LTNBButton : UIButton
+
+@end

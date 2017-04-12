@@ -11,3 +11,8 @@
 @interface ServerKeyboardView : UIView
 
 @end
+
+
+@interface SKBVButton : UIButton
+
+@end

@@ -10,4 +10,8 @@
 
 @interface GuestBathroomLTView : UIView
 
+-(instancetype)initWithFrame:(CGRect)frame andGuestBathroom:(GuestBathroom *)guestBathroom;
+
+- (void)allLightsSwitchIsOpen:(BOOL)isOpen;
+
 @end

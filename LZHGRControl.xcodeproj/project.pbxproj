@@ -18,6 +18,13 @@
 		F028151D1E9CC07C00A98EE9 /* AZhire.png in Resources */ = {isa = PBXBuildFile; fileRef = F02815191E9CC07C00A98EE9 /* AZhire.png */; };
 		F028151E1E9CC07C00A98EE9 /* AZhire2.png in Resources */ = {isa = PBXBuildFile; fileRef = F028151A1E9CC07C00A98EE9 /* AZhire2.png */; };
 		F02815201E9CC0BD00A98EE9 /* aircon_temp.png in Resources */ = {isa = PBXBuildFile; fileRef = F028151F1E9CC0BD00A98EE9 /* aircon_temp.png */; };
+		F02815231E9DBB5100A98EE9 /* GuestBathroom.m in Sources */ = {isa = PBXBuildFile; fileRef = F02815221E9DBB5100A98EE9 /* GuestBathroom.m */; };
+		F02815261E9DBB7B00A98EE9 /* Cloakroom.m in Sources */ = {isa = PBXBuildFile; fileRef = F02815251E9DBB7B00A98EE9 /* Cloakroom.m */; };
+		F02815291E9DBE2200A98EE9 /* LightsButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F02815281E9DBE2200A98EE9 /* LightsButton.m */; };
+		F028152B1E9DBF2200A98EE9 /* GuestBathroomLTView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F028152A1E9DBF2200A98EE9 /* GuestBathroomLTView.xib */; };
+		F028152D1E9DBF4800A98EE9 /* CloakroomLTView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F028152C1E9DBF4800A98EE9 /* CloakroomLTView.xib */; };
+		F02815301E9DC37300A98EE9 /* ON.png in Resources */ = {isa = PBXBuildFile; fileRef = F028152E1E9DC37300A98EE9 /* ON.png */; };
+		F02815311E9DC37300A98EE9 /* OFF.png in Resources */ = {isa = PBXBuildFile; fileRef = F028152F1E9DC37300A98EE9 /* OFF.png */; };
 		F02C08931E9CB5ED00F3D476 /* ADiSu.png in Resources */ = {isa = PBXBuildFile; fileRef = F02C08741E9CB5ED00F3D476 /* ADiSu.png */; };
 		F02C08941E9CB5ED00F3D476 /* ADiSu2.png in Resources */ = {isa = PBXBuildFile; fileRef = F02C08751E9CB5ED00F3D476 /* ADiSu2.png */; };
 		F02C08971E9CB5ED00F3D476 /* JiangWen.png in Resources */ = {isa = PBXBuildFile; fileRef = F02C08781E9CB5ED00F3D476 /* JiangWen.png */; };
@@ -127,6 +134,16 @@
 		F02815191E9CC07C00A98EE9 /* AZhire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AZhire.png; sourceTree = "<group>"; };
 		F028151A1E9CC07C00A98EE9 /* AZhire2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AZhire2.png; sourceTree = "<group>"; };
 		F028151F1E9CC0BD00A98EE9 /* aircon_temp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aircon_temp.png; sourceTree = "<group>"; };
+		F02815211E9DBB5100A98EE9 /* GuestBathroom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuestBathroom.h; sourceTree = "<group>"; };
+		F02815221E9DBB5100A98EE9 /* GuestBathroom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuestBathroom.m; sourceTree = "<group>"; };
+		F02815241E9DBB7B00A98EE9 /* Cloakroom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cloakroom.h; sourceTree = "<group>"; };
+		F02815251E9DBB7B00A98EE9 /* Cloakroom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cloakroom.m; sourceTree = "<group>"; };
+		F02815271E9DBE2200A98EE9 /* LightsButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightsButton.h; sourceTree = "<group>"; };
+		F02815281E9DBE2200A98EE9 /* LightsButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightsButton.m; sourceTree = "<group>"; };
+		F028152A1E9DBF2200A98EE9 /* GuestBathroomLTView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GuestBathroomLTView.xib; sourceTree = "<group>"; };
+		F028152C1E9DBF4800A98EE9 /* CloakroomLTView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CloakroomLTView.xib; sourceTree = "<group>"; };
+		F028152E1E9DC37300A98EE9 /* ON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ON.png; sourceTree = "<group>"; };
+		F028152F1E9DC37300A98EE9 /* OFF.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OFF.png; sourceTree = "<group>"; };
 		F02C08741E9CB5ED00F3D476 /* ADiSu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ADiSu.png; sourceTree = "<group>"; };
 		F02C08751E9CB5ED00F3D476 /* ADiSu2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ADiSu2.png; sourceTree = "<group>"; };
 		F02C08781E9CB5ED00F3D476 /* JiangWen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JiangWen.png; sourceTree = "<group>"; };
@@ -441,6 +458,12 @@
 		F06B161B1E97608A0044B677 /* LightsModel */ = {
 			isa = PBXGroup;
 			children = (
+				F02815211E9DBB5100A98EE9 /* GuestBathroom.h */,
+				F02815221E9DBB5100A98EE9 /* GuestBathroom.m */,
+				F02815241E9DBB7B00A98EE9 /* Cloakroom.h */,
+				F02815251E9DBB7B00A98EE9 /* Cloakroom.m */,
+				F02815271E9DBE2200A98EE9 /* LightsButton.h */,
+				F02815281E9DBE2200A98EE9 /* LightsButton.m */,
 			);
 			path = LightsModel;
 			sourceTree = "<group>";
@@ -471,6 +494,8 @@
 			children = (
 				F06B167F1E9768B30044B677 /* OverAllControlView.xib */,
 				F06B167D1E9768A50044B677 /* LTNavigationBarView.xib */,
+				F028152A1E9DBF2200A98EE9 /* GuestBathroomLTView.xib */,
+				F028152C1E9DBF4800A98EE9 /* CloakroomLTView.xib */,
 			);
 			path = LightsXib;
 			sourceTree = "<group>";
@@ -681,6 +706,8 @@
 		F0A64BAA1E9CB2B600DD3FD3 /* LightsImages */ = {
 			isa = PBXGroup;
 			children = (
+				F028152E1E9DC37300A98EE9 /* ON.png */,
+				F028152F1E9DC37300A98EE9 /* OFF.png */,
 				F0A64BAB1E9CB2B600DD3FD3 /* LightClose.png */,
 				F0A64BAC1E9CB2B600DD3FD3 /* LightClose2.png */,
 				F0A64BAD1E9CB2B600DD3FD3 /* LightOpen.png */,
@@ -840,6 +867,7 @@
 				F02815201E9CC0BD00A98EE9 /* aircon_temp.png in Resources */,
 				F02C08A61E9CB5ED00F3D476 /* wind_speed4.png in Resources */,
 				F02C08A21E9CB5ED00F3D476 /* wind_speed0.png in Resources */,
+				F02815301E9DC37300A98EE9 /* ON.png in Resources */,
 				F0A64BCD1E9CB2B600DD3FD3 /* Service_SOS2.png in Resources */,
 				F0A64BCC1E9CB2B600DD3FD3 /* Service_SOS.png in Resources */,
 				F0A64BC81E9CB2B600DD3FD3 /* Scene4.png in Resources */,
@@ -860,11 +888,14 @@
 				F06B16931E9B681B0044B677 /* NetworkInfo.plist in Resources */,
 				F028151D1E9CC07C00A98EE9 /* AZhire.png in Resources */,
 				F06B167E1E9768A50044B677 /* LTNavigationBarView.xib in Resources */,
+				F028152B1E9DBF2200A98EE9 /* GuestBathroomLTView.xib in Resources */,
 				F02C089F1E9CB5ED00F3D476 /* ATingZhi2.png in Resources */,
+				F028152D1E9DBF4800A98EE9 /* CloakroomLTView.xib in Resources */,
 				F0A64BC31E9CB2B600DD3FD3 /* Scene12.png in Resources */,
 				F06B164D1E97661B0044B677 /* main_bk.jpg in Resources */,
 				F028150D1E9CBD4200A98EE9 /* ATongfeng.png in Resources */,
 				F02C08A31E9CB5ED00F3D476 /* wind_speed1.png in Resources */,
+				F02815311E9DC37300A98EE9 /* OFF.png in Resources */,
 				F02C08981E9CB5ED00F3D476 /* JiangWen2.png in Resources */,
 				F0A64BC91E9CB2B600DD3FD3 /* Scene42.png in Resources */,
 				F02C089C1E9CB5ED00F3D476 /* Shengwen.png in Resources */,
@@ -908,10 +939,12 @@
 				F06B163C1E9765BE0044B677 /* AirconViewController.m in Sources */,
 				F06B167A1E9768510044B677 /* EquipmentInfo.m in Sources */,
 				F06B16451E9765FA0044B677 /* SetViewController.m in Sources */,
+				F02815291E9DBE2200A98EE9 /* LightsButton.m in Sources */,
 				F06B16681E9767B10044B677 /* ServerKeyboardView.m in Sources */,
 				F06B16351E9764240044B677 /* AsyncUdpSocket.m in Sources */,
 				F06B15E61E975B810044B677 /* AppDelegate.m in Sources */,
 				F06B163F1E9765D60044B677 /* LightsViewController.m in Sources */,
+				F02815231E9DBB5100A98EE9 /* GuestBathroom.m in Sources */,
 				F06B16741E9768330044B677 /* Aircon.m in Sources */,
 				F06B16651E9767960044B677 /* OverAllControlView.m in Sources */,
 				F06B16631E9767960044B677 /* MainLampLTView.m in Sources */,
@@ -928,6 +961,7 @@
 				F06B168C1E9786EB0044B677 /* ACNavigationView.m in Sources */,
 				F06B16531E9767580044B677 /* AirconKeyboardView.m in Sources */,
 				F06B16891E976FBB0044B677 /* DMCore.m in Sources */,
+				F02815261E9DBB7B00A98EE9 /* Cloakroom.m in Sources */,
 				F06B16421E9765EA0044B677 /* ServerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

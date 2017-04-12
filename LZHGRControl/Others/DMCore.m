@@ -64,4 +64,23 @@ static DMCore *sharedDMCore = nil;
     return _BRAircon;
 }
 
+- (Cloakroom *)cloakroom{
+    if (!_cloakroom) {
+        _cloakroom = [[Cloakroom alloc] init];
+        _cloakroom.topLamp = TRUE;
+        _cloakroom.lightStrip = FALSE;
+    }
+    return _cloakroom;
+}
+
+- (GuestBathroom *)guestBathroom{
+    if (!_guestBathroom) {
+        _guestBathroom = [[GuestBathroom alloc] init];
+        _guestBathroom.topLamp = TRUE;
+        _guestBathroom.lightStrip = FALSE;
+        _guestBathroom.wallLamp = TRUE;
+    }
+    return _guestBathroom;
+}
+
 @end

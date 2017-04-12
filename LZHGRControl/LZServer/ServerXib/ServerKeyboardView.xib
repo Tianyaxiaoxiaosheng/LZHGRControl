@@ -16,54 +16,68 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NO FAZE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oO6-Tm-CRl">
-                    <rect key="frame" x="296" y="253" width="132" height="44"/>
+                    <rect key="frame" x="296" y="252" width="132" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qeg-r3-wKD">
-                    <rect key="frame" x="310" y="150" width="105" height="68"/>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qeg-r3-wKD" customClass="SKBVButton">
+                    <rect key="frame" x="304" y="146" width="116" height="82"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.99929078780000002" green="1" blue="0.38975820649999998" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="Button"/>
+                    <state key="normal" image="Service_WR.png"/>
+                    <state key="selected" image="Service_WR2.png"/>
                     <connections>
-                        <action selector="noFazeButClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="I46-kl-PB6"/>
+                        <action selector="noFazeButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="PWk-Hf-Nle"/>
                     </connections>
                 </button>
-                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJ4-Ie-FkW">
-                    <rect key="frame" x="100" y="150" width="105" height="68"/>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJ4-Ie-FkW" customClass="SKBVButton">
+                    <rect key="frame" x="104" y="146" width="116" height="82"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.99929078780000002" green="1" blue="0.38975820649999998" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="Button"/>
+                    <state key="normal" image="Service_QL.png"/>
+                    <state key="selected" image="Service_QL2.png"/>
+                    <connections>
+                        <action selector="waitButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="j0X-g4-wq1"/>
+                    </connections>
                 </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ak-Wy-YO8" customClass="SKBVButton">
+                    <rect key="frame" x="514" y="146" width="116" height="82"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="Service_SOS.png"/>
+                    <state key="selected" image="Service_SOS2.png"/>
+                    <connections>
+                        <action selector="sosButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="QcT-TE-weF"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WAIT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auO-KH-DCu">
+                    <rect key="frame" x="96" y="254" width="132" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8K7-yS-jap">
                     <rect key="frame" x="506" y="254" width="132" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ak-Wy-YO8">
-                    <rect key="frame" x="520" y="150" width="105" height="68"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.99929078780000002" green="1" blue="0.38975820649999998" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="Button"/>
-                </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WAIT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auO-KH-DCu">
-                    <rect key="frame" x="86" y="254" width="132" height="44"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="noFazeBut" destination="qeg-r3-wKD" id="3Ud-2Y-Q2i"/>
+                <outlet property="noFazeBut" destination="qeg-r3-wKD" id="lsW-Fp-Tjg"/>
                 <outlet property="sosBut" destination="5Ak-Wy-YO8" id="AHa-M3-JjF"/>
                 <outlet property="waitBut" destination="vJ4-Ie-FkW" id="Fgt-rc-quj"/>
             </connections>
         </view>
     </objects>
+    <resources>
+        <image name="Service_QL.png" width="84" height="69"/>
+        <image name="Service_QL2.png" width="84" height="69"/>
+        <image name="Service_SOS.png" width="84" height="69"/>
+        <image name="Service_SOS2.png" width="84" height="69"/>
+        <image name="Service_WR.png" width="89" height="76"/>
+        <image name="Service_WR2.png" width="89" height="76"/>
+    </resources>
 </document>

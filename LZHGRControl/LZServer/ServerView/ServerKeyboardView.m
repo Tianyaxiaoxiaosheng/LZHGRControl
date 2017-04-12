@@ -29,10 +29,22 @@
     }
     return self;
 }
-- (IBAction)noFazeButClick:(id)sender {
-    NSLog(@"noFazeButClick");
-}
 
+- (IBAction)noFazeButtonClicked:(UIButton *)sender {
+    sender.selected = sender.isSelected ? FALSE :TRUE;
+  }
+- (IBAction)waitButtonClicked:(UIButton *)sender {
+        sender.selected = sender.isSelected ? FALSE :TRUE;
+}
+- (IBAction)sosButtonClicked:(UIButton *)sender {
+        sender.selected = sender.isSelected ? FALSE :TRUE;
+}
 
 @end
 
+@implementation SKBVButton
+
+- (void)setHighlighted:(BOOL)highlighted{
+}
+
+@end

@@ -10,4 +10,8 @@
 
 @interface CloakroomLTView : UIView
 
+-(instancetype)initWithFrame:(CGRect)frame andCloakroom:(Cloakroom *)cloakroom;
+
+- (void)allLightsSwitchIsOpen:(BOOL)isOpen;
+
 @end

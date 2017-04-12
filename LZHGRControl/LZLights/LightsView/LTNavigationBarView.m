@@ -52,7 +52,7 @@
         UIButton *tempButton = [self viewWithTag:i];
         if (tempButton) {
             if (tempButton.tag != button.tag){
-                tempButton.backgroundColor = [UIColor colorWithRed:192/255 green:192/255 blue:192/255 alpha:0.4];
+                tempButton.backgroundColor = [UIColor colorWithRed:192/255 green:192/255 blue:192/255 alpha:0.2];
                 tempButton.enabled = YES;
             }else{
                 tempButton.backgroundColor = [UIColor colorWithRed:192/255 green:192/255 blue:192/255 alpha:0.0];
@@ -61,4 +61,12 @@
         }
     }
 }
+@end
+
+@implementation LTNBButton
+
+- (void)setHighlighted:(BOOL)highlighted{
+}
+
+
 @end

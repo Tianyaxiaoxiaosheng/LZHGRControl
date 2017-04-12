@@ -22,6 +22,9 @@
 
 
 //model
+#import "GuestBathroom.h"
+#import "Cloakroom.h"
+
 #import "Aircon.h"
 #import "DMCore.h"
 #import "UDPNetwork.h"
@@ -90,6 +93,7 @@
 #define ACKB_VIEW_WIDTH  (824.0f)
 #define ACKB_VIEW_HEIGHT (340.0f)
 
+//Lights
 //Over All Control View Info
 #define OAC_VIEW_INIT_X (50.0f)
 #define OAC_VIEW_INIT_Y (190.0f)
@@ -100,8 +104,11 @@
 #define NB_VIEW_INIT_Y (190.0f)
 #define NB_VIEW_WIDTH  (700.0f)
 #define NB_VIEW_HEIGHT (450.0f)
-
-//Light keyboard view info
+//Light keyboard view info //相对于导航界面
+#define LKB_VIEW_INIT_X (0.0f)
+#define LKB_VIEW_INIT_Y (60.0f)
+#define LKB_VIEW_WIDTH  (700.0f)
+#define LKB_VIEW_HEIGHT (390.0f)
 
 
 
