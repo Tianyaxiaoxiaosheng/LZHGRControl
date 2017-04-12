@@ -10,4 +10,7 @@
 
 @interface BedroomLTView : UIView
 
+-(instancetype)initWithFrame:(CGRect)frame andBedroomm:(Bedroom *)bedroom;
+- (void)allLightsSwitchIsOpen:(BOOL)isOpen;
+
 @end

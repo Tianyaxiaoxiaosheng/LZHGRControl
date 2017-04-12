@@ -10,12 +10,55 @@
 
 @implementation ToletLTView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+-(instancetype)initWithFrame:(CGRect)frame andTolet:(Tolet *)tolet
+{
+    if ([super initWithFrame:frame]) {
+        
+        //设置界面
+        self = [[[NSBundle mainBundle] loadNibNamed:@"ToletLTView" owner:nil options:nil] lastObject];
+        self.frame = frame;
+        
+        for (NSInteger i = 1; i <= 2; i++) {
+            UIButton *button =[self viewWithTag:i];
+            [button addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
+            
+            //顺便初始化
+            switch (button.tag) {
+                case 1:
+                    button.selected = tolet.wallLamp;
+                    break;
+                case 2:
+                    button.selected = tolet.sPA;
+                    break;
+
+                default:
+                    break;
+            }
+        }
+    }
+    return self;
 }
-*/
+
+- (void)buttonClicked:(UIButton *)button{
+    DMCore * sharedDMCore = [DMCore sharedDMCore];
+        switch (button.tag) {
+            case 1:
+                sharedDMCore.tolet.wallLamp = button.isSelected ? FALSE:TRUE;
+                break;
+            case 2:
+                sharedDMCore.tolet.sPA      = button.isSelected ? FALSE:TRUE;
+                break;
+    
+            default:
+                break;
+        }
+    NSLog(@"sharedDMCore.tolet: %ld",button.tag);
+}
+
+- (void)allLightsSwitchIsOpen:(BOOL)isOpen{
+        DMCore * sharedDMCore = [DMCore sharedDMCore];
+        sharedDMCore.tolet.wallLamp = isOpen;
+}
+
 
 @end

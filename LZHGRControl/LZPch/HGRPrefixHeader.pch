@@ -22,6 +22,9 @@
 
 
 //model
+#import "Bedroom.h"
+#import "MainLamp.h"
+#import "Tolet.h"
 #import "GuestBathroom.h"
 #import "Cloakroom.h"
 

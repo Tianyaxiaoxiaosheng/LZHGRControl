@@ -12,6 +12,9 @@
 @property (nonatomic, strong) Aircon *PLAircon;
 @property (nonatomic, strong) Aircon *BRAircon;
 
+@property (nonatomic, strong) Bedroom *bedroom;
+@property (nonatomic, strong) MainLamp *mainLamp;
+@property (nonatomic, strong) Tolet *tolet;
 @property (nonatomic, strong) Cloakroom *cloakroom;
 @property (nonatomic, strong) GuestBathroom *guestBathroom;
 

@@ -233,7 +233,7 @@
         //尽量以数据中心为准，也可在此核准数据
         self.PLAirconKeyboardView.temperatureLabel.text = [NSString stringWithFormat:@"%ld", self.sharedDMCore.PLAircon.temperature];
     }else if ([keyPath isEqualToString:@"BRAircon.temperature"]){
-        //NSLog(@"%@: %@ to %@", context, [change valueForKey:@"old"], [change valueForKey:@"new"]);
+//        NSLog(@"%@: %@ to %@", context, [change valueForKey:@"old"], [change valueForKey:@"new"]);
         self.BRAirconKeyboardView.temperatureLabel.text = [NSString stringWithFormat:@"%ld", self.sharedDMCore.BRAircon.temperature];
     }
     

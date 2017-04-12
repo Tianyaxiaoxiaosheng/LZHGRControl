@@ -64,6 +64,43 @@ static DMCore *sharedDMCore = nil;
     return _BRAircon;
 }
 
+- (Bedroom *)bedroom{
+    if (!_bedroom) {
+        _bedroom = [[Bedroom alloc] init];
+        _bedroom.lBedLamp = TRUE;
+        _bedroom.rBedLamp = FALSE;
+        _bedroom.lReadingLamp = TRUE;
+        _bedroom.lReadingLamp = FALSE;
+        _bedroom.roomLamp = TRUE;
+        
+        _bedroom.romantic = FALSE;
+        _bedroom.sleep = FALSE;
+        _bedroom.working = FALSE;
+        _bedroom.reception = FALSE;
+    }
+    return _bedroom;
+}
+
+- (MainLamp *)mainLamp{
+    if (!_mainLamp) {
+        _mainLamp = [[MainLamp alloc] init];
+        _mainLamp.roomLamp = FALSE;
+        _mainLamp.corridor = TRUE;
+        _mainLamp.working = TRUE;
+        _mainLamp.reception = FALSE;
+    }
+    return _mainLamp;
+}
+
+- (Tolet *)tolet{
+    if (_tolet) {
+        _tolet = [[Tolet alloc] init];
+        _tolet.wallLamp = TRUE;
+        _tolet.sPA = FALSE;
+    }
+    return _tolet;
+}
+
 - (Cloakroom *)cloakroom{
     if (!_cloakroom) {
         _cloakroom = [[Cloakroom alloc] init];

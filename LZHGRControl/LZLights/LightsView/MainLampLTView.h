@@ -10,4 +10,7 @@
 
 @interface MainLampLTView : UIView
 
+-(instancetype)initWithFrame:(CGRect)frame andMainLamp:(MainLamp *)mainLamp;
+- (void)allLightsSwitchIsOpen:(BOOL)isOpen;
+
 @end

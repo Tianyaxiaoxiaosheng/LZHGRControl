@@ -10,4 +10,7 @@
 
 @interface ToletLTView : UIView
 
+-(instancetype)initWithFrame:(CGRect)frame andTolet:(Tolet *)tolet;
+- (void)allLightsSwitchIsOpen:(BOOL)isOpen;
+
 @end
