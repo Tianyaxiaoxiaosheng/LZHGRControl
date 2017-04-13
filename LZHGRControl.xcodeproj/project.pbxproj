@@ -112,7 +112,6 @@
 		F06B168C1E9786EB0044B677 /* ACNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B168B1E9786EB0044B677 /* ACNavigationView.m */; };
 		F06B168E1E97904E0044B677 /* ACNavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F06B168D1E97904E0044B677 /* ACNavigationView.xib */; };
 		F06B16911E9B64500044B677 /* UDPNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B16901E9B64500044B677 /* UDPNetwork.m */; };
-		F06B16931E9B681B0044B677 /* NetworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = F06B16921E9B681B0044B677 /* NetworkInfo.plist */; };
 		F0A64BBE1E9CB2B600DD3FD3 /* LightClose.png in Resources */ = {isa = PBXBuildFile; fileRef = F0A64BAB1E9CB2B600DD3FD3 /* LightClose.png */; };
 		F0A64BBF1E9CB2B600DD3FD3 /* LightClose2.png in Resources */ = {isa = PBXBuildFile; fileRef = F0A64BAC1E9CB2B600DD3FD3 /* LightClose2.png */; };
 		F0A64BC01E9CB2B600DD3FD3 /* LightOpen.png in Resources */ = {isa = PBXBuildFile; fileRef = F0A64BAD1E9CB2B600DD3FD3 /* LightOpen.png */; };
@@ -293,7 +292,6 @@
 		F06B168D1E97904E0044B677 /* ACNavigationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ACNavigationView.xib; path = ../AirconXib/ACNavigationView.xib; sourceTree = "<group>"; };
 		F06B168F1E9B64500044B677 /* UDPNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UDPNetwork.h; sourceTree = "<group>"; };
 		F06B16901E9B64500044B677 /* UDPNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UDPNetwork.m; sourceTree = "<group>"; };
-		F06B16921E9B681B0044B677 /* NetworkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NetworkInfo.plist; sourceTree = "<group>"; };
 		F0A64BAB1E9CB2B600DD3FD3 /* LightClose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LightClose.png; sourceTree = "<group>"; };
 		F0A64BAC1E9CB2B600DD3FD3 /* LightClose2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LightClose2.png; sourceTree = "<group>"; };
 		F0A64BAD1E9CB2B600DD3FD3 /* LightOpen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LightOpen.png; sourceTree = "<group>"; };
@@ -721,7 +719,6 @@
 			isa = PBXGroup;
 			children = (
 				F06B164E1E97665C0044B677 /* EquipmentInfoList.plist */,
-				F06B16921E9B681B0044B677 /* NetworkInfo.plist */,
 				F06B16871E976FBB0044B677 /* DMCore.h */,
 				F06B16881E976FBB0044B677 /* DMCore.m */,
 				F06B168F1E9B64500044B677 /* UDPNetwork.h */,
@@ -984,7 +981,6 @@
 				F028154B1E9E17C200A98EE9 /* sleep.png in Resources */,
 				F0A64BC41E9CB2B600DD3FD3 /* Scene2.png in Resources */,
 				F02815461E9E17C200A98EE9 /* working2.png in Resources */,
-				F06B16931E9B681B0044B677 /* NetworkInfo.plist in Resources */,
 				F028151D1E9CC07C00A98EE9 /* AZhire.png in Resources */,
 				F06B167E1E9768A50044B677 /* LTNavigationBarView.xib in Resources */,
 				F028152B1E9DBF2200A98EE9 /* GuestBathroomLTView.xib in Resources */,

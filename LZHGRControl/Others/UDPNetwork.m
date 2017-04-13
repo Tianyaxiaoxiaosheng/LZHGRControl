@@ -8,7 +8,8 @@
 
 #import "UDPNetwork.h"
 @interface UDPNetwork ()<AsyncUdpSocketDelegate>
-@property (nonatomic, strong) NSDictionary *networkInfoDic;
+@property (nonatomic, copy) NSString *path;
+
 @property (nonatomic, strong) DMCore *sharedDMCore;
 @property (nonatomic, assign)   BOOL isReceiveNetworkData;
 @property (nonatomic, strong) AsyncUdpSocket *socket;
@@ -17,15 +18,45 @@
 @implementation UDPNetwork
 
 #pragma mark - lazyload
+- (NSString *)path{
+    if (!_path) {
+        //建立文件管理
+//        NSFileManager *fm = [NSFileManager defaultManager];
+         //找到Documents文件所在的路径
+        NSArray *pathArray = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
+        //取得第一个Documents文件夹的路径
+        NSString *filePath = [pathArray firstObject];
+        //把NetworkInfoDic文件加入
+        _path = [filePath stringByAppendingPathComponent:@"NetworkInfoDic.plist"];
+    }
+    return _path;
+}
+
 - (NSDictionary *)networkInfoDic
 {
     if (!_networkInfoDic) {
-        NSBundle *bundle = [NSBundle mainBundle];
-        NSString *path = [bundle pathForResource:@"NetworkInfo" ofType:@"plist"];
-        _networkInfoDic = [NSDictionary dictionaryWithContentsOfFile:path];
-    }
+        _networkInfoDic = [NSMutableDictionary dictionaryWithContentsOfFile:self.path];
+        NSLog(@"%@", _networkInfoDic);
+        if (!_networkInfoDic) {
+            //如果没有读取到数据，则从建文件并初始数据
+            NSFileManager *fm = [NSFileManager defaultManager];
+            [fm createFileAtPath:self.path contents:nil attributes:nil];
+            
+            //网络初始数据
+            NSDictionary *portDic = @{@"1":@"12345", @"2":@"12345", @"3":@"12345"};
+            NSDictionary *dic = @{@"host":@"192.168.0.1", @"port":portDic};
+            
+            [dic writeToFile:self.path atomically:YES];
+            _networkInfoDic = [NSMutableDictionary dictionaryWithContentsOfFile:self.path];
+            NSLog(@"%@", _networkInfoDic);
+        }
+     }
     return _networkInfoDic;
 }
+- (BOOL)renewLocalNetworkInfo{
+    return [self.networkInfoDic writeToFile:self.path atomically:YES];
+}
+
 - (DMCore *)sharedDMCore{
     if (!_sharedDMCore) {
         _sharedDMCore = [DMCore sharedDMCore];
