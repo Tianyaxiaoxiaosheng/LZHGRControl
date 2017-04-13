@@ -47,6 +47,7 @@
 
 - (void)buttonClicked:(UIButton *)button{
     DMCore * sharedDMCore = [DMCore sharedDMCore];
+
         switch (button.tag) {
             case 1:
                 sharedDMCore.mainLamp.roomLamp = button.isSelected ? FALSE:TRUE;
@@ -67,9 +68,10 @@
 }
 
 - (void)allLightsSwitchIsOpen:(BOOL)isOpen{
-        DMCore * sharedDMCore = [DMCore sharedDMCore];
-        sharedDMCore.mainLamp.roomLamp = isOpen;
-        sharedDMCore.mainLamp.corridor = isOpen;
+    DMCore * sharedDMCore = [DMCore sharedDMCore];
+    [sharedDMCore.mainLamp allSwitchIsOpen:isOpen];
+//        sharedDMCore.mainLamp.roomLamp = isOpen;
+//        sharedDMCore.mainLamp.corridor = isOpen;
 }
 
 

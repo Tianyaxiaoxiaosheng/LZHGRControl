@@ -10,4 +10,9 @@
 
 @implementation MainLamp
 
+- (void)allSwitchIsOpen:(BOOL)isOpen{
+    self.roomLamp = isOpen;
+    self.corridor = isOpen;
+}
+
 @end

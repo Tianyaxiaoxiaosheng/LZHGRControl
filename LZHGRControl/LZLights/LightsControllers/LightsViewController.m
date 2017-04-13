@@ -253,10 +253,10 @@
 
     //卫生间
     else if ([keyPath isEqualToString:@"tolet.wallLamp"]){
-        UIButton *button = [self.toletLTView viewWithTag:3];
+        UIButton *button = [self.toletLTView viewWithTag:1];
         button.selected = self.sharedDMCore.tolet.wallLamp;
     }else if ([keyPath isEqualToString:@"tolet.sPA"]){
-        UIButton *button = [self.toletLTView viewWithTag:4];
+        UIButton *button = [self.toletLTView viewWithTag:2];
         button.selected = self.sharedDMCore.tolet.sPA;
     }
 

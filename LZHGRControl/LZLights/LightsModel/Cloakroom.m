@@ -10,4 +10,9 @@
 
 @implementation Cloakroom
 
+- (void)allSwitchIsOpen:(BOOL)isOpen{
+    self.topLamp = isOpen;
+    self.lightStrip = isOpen;
+}
+
 @end

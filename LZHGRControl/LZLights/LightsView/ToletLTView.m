@@ -43,21 +43,29 @@
     DMCore * sharedDMCore = [DMCore sharedDMCore];
         switch (button.tag) {
             case 1:
-                sharedDMCore.tolet.wallLamp = button.isSelected ? FALSE:TRUE;
+                sharedDMCore.tolet.wallLamp = TRUE;
                 break;
             case 2:
-                sharedDMCore.tolet.sPA      = button.isSelected ? FALSE:TRUE;
+                sharedDMCore.tolet.sPA = button.isSelected ? FALSE:TRUE;
                 break;
     
             default:
                 break;
         }
-    NSLog(@"sharedDMCore.tolet: %ld",button.tag);
+//    NSLog(@"sharedDMCore.tolet: %ld",button.tag);
+//    if (sharedDMCore.tolet.wallLamp) {
+//        NSLog(@"sharedDMCore.tolet.wallLamp: true");
+//    } else {
+//        NSLog(@"sharedDMCore.tolet.wallLamp: false");
+//    }
+
 }
 
 - (void)allLightsSwitchIsOpen:(BOOL)isOpen{
-        DMCore * sharedDMCore = [DMCore sharedDMCore];
-        sharedDMCore.tolet.wallLamp = isOpen;
+//    NSLog(@"allLightsSwitchIsOpen:(BOOL)isOpen");
+    DMCore * sharedDMCore = [DMCore sharedDMCore];
+    [sharedDMCore.tolet allSwitchIsOpen:isOpen];
+//        sharedDMCore.tolet.wallLamp = isOpen;
 }
 
 

@@ -10,4 +10,10 @@
 
 @implementation GuestBathroom
 
+- (void)allSwitchIsOpen:(BOOL)isOpen{
+    self.topLamp = isOpen;
+    self.lightStrip = isOpen;
+    self.wallLamp = isOpen;
+ }
+
 @end

@@ -69,9 +69,10 @@
 
 - (void)allLightsSwitchIsOpen:(BOOL)isOpen{
     DMCore * sharedDMCore = [DMCore sharedDMCore];
-    sharedDMCore.guestBathroom.topLamp = isOpen;
-    sharedDMCore.guestBathroom.lightStrip = isOpen;
-    sharedDMCore.guestBathroom.wallLamp = isOpen;
+    [sharedDMCore.guestBathroom allSwitchIsOpen:isOpen];
+//    sharedDMCore.guestBathroom.topLamp = isOpen;
+//    sharedDMCore.guestBathroom.lightStrip = isOpen;
+//    sharedDMCore.guestBathroom.wallLamp = isOpen;
 }
 
 @end

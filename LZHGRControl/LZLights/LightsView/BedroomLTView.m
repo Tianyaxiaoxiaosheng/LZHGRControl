@@ -99,12 +99,14 @@
 - (void)allLightsSwitchIsOpen:(BOOL)isOpen{
     DMCore * sharedDMCore = [DMCore sharedDMCore];
     
-    //只控制五个灯
-    sharedDMCore.bedroom.lBedLamp = isOpen;
-    sharedDMCore.bedroom.rBedLamp = isOpen;
-    sharedDMCore.bedroom.lReadingLamp = isOpen;
-    sharedDMCore.bedroom.rReadingLamp = isOpen;
-    sharedDMCore.bedroom.roomLamp = isOpen;
+    [sharedDMCore.bedroom allSwitchIsOpen:isOpen];
+    
+//    //只控制五个灯
+//    sharedDMCore.bedroom.lBedLamp = isOpen;
+//    sharedDMCore.bedroom.rBedLamp = isOpen;
+//    sharedDMCore.bedroom.lReadingLamp = isOpen;
+//    sharedDMCore.bedroom.rReadingLamp = isOpen;
+//    sharedDMCore.bedroom.roomLamp = isOpen;
 }
 
 

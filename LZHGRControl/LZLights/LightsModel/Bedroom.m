@@ -10,4 +10,12 @@
 
 @implementation Bedroom
 
+- (void)allSwitchIsOpen:(BOOL)isOpen{
+    self.lBedLamp = isOpen;
+    self.rBedLamp = isOpen;
+    self.roomLamp = isOpen;
+    self.lReadingLamp = isOpen;
+    self.rReadingLamp = isOpen;
+}
+
 @end

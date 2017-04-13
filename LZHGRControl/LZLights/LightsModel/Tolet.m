@@ -10,4 +10,8 @@
 
 @implementation Tolet
 
+- (void)allSwitchIsOpen:(BOOL)isOpen{
+    self.wallLamp = isOpen;
+}
+
 @end

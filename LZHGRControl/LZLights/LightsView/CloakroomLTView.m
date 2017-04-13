@@ -56,8 +56,9 @@
 
 - (void)allLightsSwitchIsOpen:(BOOL)isOpen{
     DMCore * sharedDMCore = [DMCore sharedDMCore];
-    sharedDMCore.cloakroom.topLamp = isOpen;
-    sharedDMCore.cloakroom.lightStrip = isOpen;
+    [sharedDMCore.cloakroom allSwitchIsOpen:isOpen];
+//    sharedDMCore.cloakroom.topLamp = isOpen;
+//    sharedDMCore.cloakroom.lightStrip = isOpen;
 }
 
 @end

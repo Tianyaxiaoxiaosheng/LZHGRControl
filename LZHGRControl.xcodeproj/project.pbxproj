@@ -545,12 +545,12 @@
 		F06B161B1E97608A0044B677 /* LightsModel */ = {
 			isa = PBXGroup;
 			children = (
+				F02815271E9DBE2200A98EE9 /* LightsButton.h */,
+				F02815281E9DBE2200A98EE9 /* LightsButton.m */,
 				F02815211E9DBB5100A98EE9 /* GuestBathroom.h */,
 				F02815221E9DBB5100A98EE9 /* GuestBathroom.m */,
 				F02815241E9DBB7B00A98EE9 /* Cloakroom.h */,
 				F02815251E9DBB7B00A98EE9 /* Cloakroom.m */,
-				F02815271E9DBE2200A98EE9 /* LightsButton.h */,
-				F02815281E9DBE2200A98EE9 /* LightsButton.m */,
 				F02815321E9E0E7E00A98EE9 /* Bedroom.h */,
 				F02815331E9E0E7E00A98EE9 /* Bedroom.m */,
 				F02815351E9E0E9F00A98EE9 /* MainLamp.h */,

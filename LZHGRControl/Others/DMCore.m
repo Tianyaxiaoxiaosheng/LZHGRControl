@@ -47,6 +47,8 @@ static DMCore *sharedDMCore = nil;
 }
 
 #pragma mark-懒加载对象
+//当数据不进行初始化时，bool的属性为空
+
 //lazyload some init data
 - (Aircon *)PLAircon{
     if (!_PLAircon) {
@@ -93,7 +95,7 @@ static DMCore *sharedDMCore = nil;
 }
 
 - (Tolet *)tolet{
-    if (_tolet) {
+    if (!_tolet) {
         _tolet = [[Tolet alloc] init];
         _tolet.wallLamp = TRUE;
         _tolet.sPA = FALSE;
