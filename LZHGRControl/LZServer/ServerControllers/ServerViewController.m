@@ -9,22 +9,39 @@
 #import "ServerViewController.h"
 
 @interface ServerViewController ()
+@property (nonatomic, strong) TitleBarView *titleBarView;
+@property (nonatomic, strong) ServerKeyboardView *serverKeyboardView;
 
 @end
 
 @implementation ServerViewController
 
+#pragma mark - lazyload
+- (TitleBarView *)titleBarView{
+    if (!_titleBarView) {
+        EquipmentInfo *serverInfo = [[EquipmentInfoManage sharedEquipmentInfoTool] findEquipmentInfoWithName:@"服务"];
+        _titleBarView = [[TitleBarView alloc] initWithFrame:CGRectMake(TITLEBAR_VIEW_INIT_X, TITLEBAR_VIEW_INIT_Y, TITLEBAR_VIEW_WIDTH, TITLEBAR_VIEW_HEIGHT) andEquipment:serverInfo];
+    }
+    return _titleBarView;
+}
+
+- (ServerKeyboardView *)serverKeyboardView{
+    if (!_serverKeyboardView) {
+        _serverKeyboardView = [[ServerKeyboardView alloc] initWithFrame:CGRectMake(SERVER_VIEW_INIT_X, SERVER_VIEW_INIT_Y, SERVER_VIEW_WIDTH, SERVER_VIEW_HEIGHT)];
+    }
+    return _serverKeyboardView;
+}
+
+///////////////////////////////////////////////////////////////////////////////
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //self.title = @"服务";
-    //self.view.backgroundColor = [UIColor blackColor];
     
-    EquipmentInfo *serverInfo = [[EquipmentInfoManage sharedEquipmentInfoTool] findEquipmentInfoWithName:@"服务"];
-    TitleBarView *titleBarView = [[TitleBarView alloc] initWithFrame:CGRectMake(TITLEBAR_VIEW_INIT_X, TITLEBAR_VIEW_INIT_Y, TITLEBAR_VIEW_WIDTH, TITLEBAR_VIEW_HEIGHT) andEquipment:serverInfo];
-    [self.view addSubview:titleBarView];
+    //添加标题
+    [self.view addSubview:self.titleBarView];
     
-    ServerKeyboardView *serverKeyboardView = [[ServerKeyboardView alloc] initWithFrame:CGRectMake(SERVER_VIEW_INIT_X, SERVER_VIEW_INIT_Y, SERVER_VIEW_WIDTH, SERVER_VIEW_HEIGHT)];
-    [self.view addSubview:serverKeyboardView];
+    //添加键盘区
+    [self.view addSubview:self.serverKeyboardView];
 
 }
 

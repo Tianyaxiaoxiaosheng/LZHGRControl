@@ -37,7 +37,6 @@
     return _sharedDMCore;
 }
 
-
 - (TitleBarView *)titleBarView{
     if (!_titleBarView) {
         EquipmentInfo *lightInfo = [[EquipmentInfoManage sharedEquipmentInfoTool] findEquipmentInfoWithName:@"灯光"];
@@ -69,24 +68,28 @@
     }
     return _bedroomLTView;
 }
+
 - (MainLampLTView *)mainLampLTView{
     if (!_mainLampLTView) {
         _mainLampLTView= [[MainLampLTView alloc] initWithFrame:CGRectMake(LKB_VIEW_INIT_X, LKB_VIEW_INIT_Y, LKB_VIEW_WIDTH, LKB_VIEW_HEIGHT) andMainLamp:self.sharedDMCore.mainLamp];
     }
     return _mainLampLTView;
 }
+
 - (ToletLTView *)toletLTView{
     if (!_toletLTView) {
         _toletLTView = [[ToletLTView alloc] initWithFrame:CGRectMake(LKB_VIEW_INIT_X, LKB_VIEW_INIT_Y, LKB_VIEW_WIDTH, LKB_VIEW_HEIGHT) andTolet:self.sharedDMCore.tolet];
     }
     return _toletLTView;
 }
+
 - (CloakroomLTView *)cloakroomLTView{
     if (!_cloakroomLTView) {
         _cloakroomLTView = [[CloakroomLTView alloc] initWithFrame:CGRectMake(LKB_VIEW_INIT_X, LKB_VIEW_INIT_Y, LKB_VIEW_WIDTH, LKB_VIEW_HEIGHT) andCloakroom:self.sharedDMCore.cloakroom];
     }
     return _cloakroomLTView;
 }
+
 - (GuestBathroomLTView *)guestBathroomLTView{
     if (!_guestBathroomLTView) {
         _guestBathroomLTView = [[GuestBathroomLTView alloc] initWithFrame:CGRectMake(LKB_VIEW_INIT_X, LKB_VIEW_INIT_Y, LKB_VIEW_WIDTH, LKB_VIEW_HEIGHT) andGuestBathroom:self.sharedDMCore.guestBathroom];
@@ -118,9 +121,57 @@
     [self.lTnavigationBarView addSubview:self.bedroomLTView];
     self.tempView = self.bedroomLTView;
 }
-     
+
+//控制器死亡时移除观察者，
+- (void)dealloc{
+    [self.sharedDMCore removeObserver:self forKeyPath:@"bedroom.lBedLamp"];
+    [self.sharedDMCore removeObserver:self forKeyPath:@"bedroom.rBedLamp"];
+    [self.sharedDMCore removeObserver:self forKeyPath:@"bedroom.lReadingLamp"];
+    [self.sharedDMCore removeObserver:self forKeyPath:@"bedroom.rReadingLamp"];
+    [self.sharedDMCore removeObserver:self forKeyPath:@"bedroom.roomLamp"];
+    [self.sharedDMCore removeObserver:self forKeyPath:@"bedroom.romantic"];
+    [self.sharedDMCore removeObserver:self forKeyPath:@"bedroom.sleep"];
+    [self.sharedDMCore removeObserver:self forKeyPath:@"bedroom.working"];
+    [self.sharedDMCore removeObserver:self forKeyPath:@"bedroom.receptione"];
+    
+    [self.sharedDMCore removeObserver:self forKeyPath:@"mainLamp.roomLamp"];
+    [self.sharedDMCore removeObserver:self forKeyPath:@"mainLamp.corridor"];
+    [self.sharedDMCore removeObserver:self forKeyPath:@"mainLamp.working"];
+    [self.sharedDMCore removeObserver:self forKeyPath:@"mainLamp.reception"];
+
+    [self.sharedDMCore removeObserver:self forKeyPath:@"tolet.wallLamp"];
+    [self.sharedDMCore removeObserver:self forKeyPath:@"tolet.sPA"];
+    
+    [self.sharedDMCore removeObserver:self forKeyPath:@"cloakroom.topLamp"];
+    [self.sharedDMCore removeObserver:self forKeyPath:@"cloakroom.lightStrip"];
+    
+    [self.sharedDMCore removeObserver:self forKeyPath:@"guestBathroom.topLamp"];
+    [self.sharedDMCore removeObserver:self forKeyPath:@"guestBathroom.lightStrip"];
+    [self.sharedDMCore removeObserver:self forKeyPath:@"guestBathroom.wallLamp"];
+
+}
+
+#pragma mark -addObserver //////////////////////////////////////////////////////////////////
 - (void)addObserverForLightsProperty{
     
+    //卧室
+    [self addObserverForBedroomProperty];
+ 
+    //客厅
+    [self addObserverForMainLampProperty];
+    
+    //卫生间
+    [self addObserverForToletProperty];
+    
+    //衣帽间
+    [self addObserverForCloakroomProperty];
+
+    //客卫
+    [self addObserverForGuestBathroomProperty];
+
+}
+
+- (void)addObserverForBedroomProperty{
     //卧室
     [self.sharedDMCore addObserver:self forKeyPath:@"bedroom.lBedLamp" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:@"bedroom.lBedLamp has changes"];
     [self.sharedDMCore addObserver:self forKeyPath:@"bedroom.rBedLamp" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:@"bedroom.rBedLamp has changes"];
@@ -131,25 +182,34 @@
     [self.sharedDMCore addObserver:self forKeyPath:@"bedroom.sleep" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:@"bedroom.sleep has changes"];
     [self.sharedDMCore addObserver:self forKeyPath:@"bedroom.working" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:@"bedroom.working has changes"];
     [self.sharedDMCore addObserver:self forKeyPath:@"bedroom.reception" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:@"bedroom.reception has changes"];
- 
+
+}
+- (void)addObserverForMainLampProperty{
     //客厅
     [self.sharedDMCore addObserver:self forKeyPath:@"mainLamp.roomLamp" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:@"mainLamp.roomLamp has changes"];
     [self.sharedDMCore addObserver:self forKeyPath:@"mainLamp.corridor" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:@"mainLamp.corridor has changes"];
     [self.sharedDMCore addObserver:self forKeyPath:@"mainLamp.working" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:@"mainLamp.working has changes"];
     [self.sharedDMCore addObserver:self forKeyPath:@"mainLamp.reception" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:@"mainLamp.reception has changes"];
-    
+
+}
+- (void)addObserverForToletProperty{
     //卫生间
     [self.sharedDMCore addObserver:self forKeyPath:@"tolet.wallLamp" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:@"tolet.wallLamp has changes"];
     [self.sharedDMCore addObserver:self forKeyPath:@"tolet.sPA" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:@"tolet.sPA has changes"];
     
+}
+- (void)addObserverForCloakroomProperty{
     //衣帽间
     [self.sharedDMCore addObserver:self forKeyPath:@"cloakroom.topLamp" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:@"cloakroom.topLamp has changes"];
     [self.sharedDMCore addObserver:self forKeyPath:@"cloakroom.lightStrip" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:@"cloakroom.lightStrip has changes"];
-
+    
+}
+- (void)addObserverForGuestBathroomProperty{
     //客卫
     [self.sharedDMCore addObserver:self forKeyPath:@"guestBathroom.topLamp" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:@"guestBathroom.topLamp has changes"];
     [self.sharedDMCore addObserver:self forKeyPath:@"guestBathroom.lightStrip" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:@"guestBathroom.lightStrip has changes"];
     [self.sharedDMCore addObserver:self forKeyPath:@"guestBathroom.wallLamp" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:@"guestBathroom.wallLamp has changes"];
+    
 }
 
 
@@ -195,6 +255,7 @@
             break;
     }
 }
+
 //替换界面
 - (void)replaceLTnavigationBarViewKeyboardView:(UIView *)view{
     [self.tempView removeFromSuperview];

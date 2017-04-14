@@ -45,7 +45,8 @@
         //房间号
         self.roomNumTextField.clearButtonMode = UITextFieldViewModeAlways;
         self.roomNumTextField.clearsOnBeginEditing = YES;
-        self.roomNumTextField.keyboardType = UIKeyboardTypeDecimalPad;
+        self.roomNumTextField.keyboardType = UIKeyboardTypeDecimalPad; //数字键盘 有数字和小数点
+        self.roomNumTextField.placeholder = @"4位数字"; //水印
         self.roomNumTextField.delegate = self;
       }
     return self;
@@ -61,6 +62,8 @@
         NSLog(@"switch OFF");
     }
 }
+
+#pragma mark - 按钮事件
 
 - (IBAction)cancel:(id)sender {
       self.ipTextField.text = [self.sharedUDPNetwork.networkInfoDic objectForKey:@"host"];
@@ -81,6 +84,8 @@
     }
 
 }
+
+#pragma mark - 文本处理
 - (NSString *)buildIPStringWithString:(NSString *)string{
    
     //检查数据规范
@@ -116,9 +121,10 @@
         return false;
     }
     
-    NSInteger from = 0;
+    NSInteger from = 0; //记录截取的初始位置
+    NSInteger cutCount = 0; //记录截取次数
     NSInteger length = string.length;
-//    NSInteger to   = 0; //有i 记录
+//    NSInteger to   = 0; //截取长度i-from+1
     
     for (NSInteger i = 0; i < length; i++) {
         unichar charactor = [string characterAtIndex:i];
@@ -136,11 +142,12 @@
                 return false;
             }
             from = i+1;
+            cutCount++;
         }
     }
     
-    //再次判读下所有字符是否送检
-    if (from != length) {
+    //判断截取次数是否满足
+    if (cutCount != 4) {
         return false;
     }
     

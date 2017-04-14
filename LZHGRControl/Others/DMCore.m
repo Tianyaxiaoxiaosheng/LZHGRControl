@@ -75,6 +75,7 @@ static DMCore *sharedDMCore = nil;
         _bedroom.lReadingLamp = FALSE;
         _bedroom.roomLamp = TRUE;
         
+        //后面操作中不在直接赋值，而是调用其本身提供的方法
         _bedroom.romantic = FALSE;
         _bedroom.sleep = FALSE;
         _bedroom.working = FALSE;

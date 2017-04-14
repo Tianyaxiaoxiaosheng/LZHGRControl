@@ -18,4 +18,30 @@
     self.rReadingLamp = isOpen;
 }
 
+- (void)romanticModel{
+    self.sleep = FALSE;
+    self.working = FALSE;
+    self.reception = FALSE;
+//    self.romantic = TRUE;
+}
+- (void)sleepModel{
+    self.romantic = FALSE;
+    self.working = FALSE;
+    self.reception = FALSE;
+//    self.sleep = TRUE;
+
+}
+- (void)workingModel{
+    self.romantic = FALSE;
+    self.sleep = FALSE;
+    self.reception = FALSE;
+//    self.working = TRUE;
+}
+- (void)receptionModel{
+    self.romantic = FALSE;
+    self.sleep = FALSE;
+    self.working = FALSE;
+//    self.reception = TRUE;
+}
+
 @end

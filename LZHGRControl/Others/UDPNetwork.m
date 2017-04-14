@@ -36,7 +36,8 @@
 {
     if (!_networkInfoDic) {
         _networkInfoDic = [NSMutableDictionary dictionaryWithContentsOfFile:self.path];
-        NSLog(@"%@", _networkInfoDic);
+        //NSLog(@"%@", _networkInfoDic);
+        //只有第一次执行该段代码时，_networkInfoDic从文件获取不到数据，执行下方的创建初始化
         if (!_networkInfoDic) {
             //如果没有读取到数据，则从建文件并初始数据
             NSFileManager *fm = [NSFileManager defaultManager];
@@ -48,7 +49,7 @@
             
             [dic writeToFile:self.path atomically:YES];
             _networkInfoDic = [NSMutableDictionary dictionaryWithContentsOfFile:self.path];
-            NSLog(@"%@", _networkInfoDic);
+            //NSLog(@"%@", _networkInfoDic);
         }
      }
     return _networkInfoDic;

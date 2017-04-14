@@ -10,21 +10,39 @@
 
 @interface SetViewController ()
 
+@property (nonatomic, strong) TitleBarView *titleBarView;
+@property (nonatomic, strong) SetKeyboardView *setKeyboardView;
+
 @end
 
 @implementation SetViewController
 
+#pragma mark - lazyload
+- (TitleBarView *)titleBarView{
+    if (!_titleBarView) {
+        EquipmentInfo *setInfo = [[EquipmentInfoManage sharedEquipmentInfoTool] findEquipmentInfoWithName:@"设置"];
+        _titleBarView = [[TitleBarView alloc] initWithFrame:CGRectMake(TITLEBAR_VIEW_INIT_X, TITLEBAR_VIEW_INIT_Y, TITLEBAR_VIEW_WIDTH, TITLEBAR_VIEW_HEIGHT) andEquipment:setInfo];
+    }
+    return _titleBarView;
+}
+
+- (SetKeyboardView *)setKeyboardView{
+    if (!_setKeyboardView) {
+        _setKeyboardView = [[SetKeyboardView alloc] initWithFrame:CGRectMake(SET_VIEW_INIT_X, SET_VIEW_INIT_Y, SET_VIEW_WIDTH, SET_VIEW_HEIGHT)];
+    }
+    return _setKeyboardView;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //self.title = @"设置";
-    //self.view.backgroundColor = [UIColor greenColor];
     
-    EquipmentInfo *setInfo = [[EquipmentInfoManage sharedEquipmentInfoTool] findEquipmentInfoWithName:@"设置"];
-    TitleBarView *titleBarView = [[TitleBarView alloc] initWithFrame:CGRectMake(TITLEBAR_VIEW_INIT_X, TITLEBAR_VIEW_INIT_Y, TITLEBAR_VIEW_WIDTH, TITLEBAR_VIEW_HEIGHT) andEquipment:setInfo];
-    [self.view addSubview:titleBarView];
+    //添加标题栏
+    [self.view addSubview:self.titleBarView];
     
-    SetKeyboardView *setKeyboardView = [[SetKeyboardView alloc] initWithFrame:CGRectMake(SET_VIEW_INIT_X, SET_VIEW_INIT_Y, SET_VIEW_WIDTH, SET_VIEW_HEIGHT)];
-    [self.view addSubview:setKeyboardView];
+    //添加键盘
+    [self.view addSubview:self.setKeyboardView];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -28,4 +28,11 @@
 //对外提供全开全关的模式
 - (void)allSwitchIsOpen:(BOOL)isOpen;
 
+//对外提供四中模式 ,具体开关暂时不知
+- (void)romanticModel;
+- (void)sleepModel;
+- (void)workingModel;
+- (void)receptionModel;
+
+
 @end

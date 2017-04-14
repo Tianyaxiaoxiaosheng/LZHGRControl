@@ -111,9 +111,14 @@
     [self.sharedDMCore removeObserver:self forKeyPath:@"PLAircon.temperature"];
     [self.sharedDMCore removeObserver:self forKeyPath:@"BRAircon.temperature"];
     
+    [self.sharedDMCore removeObserver:self forKeyPath:@"PLAircon.modelType"];
+    [self.sharedDMCore removeObserver:self forKeyPath:@"BRAircon.modelType"];
+    
+    [self.sharedDMCore removeObserver:self forKeyPath:@"PLAircon.windType"];
+    [self.sharedDMCore removeObserver:self forKeyPath:@"BRAircon.windType"];
 }
 
-
+#pragma mark -addObserverForAirconProperty //////////////////////////////////////////////////
 /**
  *添加观察者
  *分别为需要观察的属性添加观察者
