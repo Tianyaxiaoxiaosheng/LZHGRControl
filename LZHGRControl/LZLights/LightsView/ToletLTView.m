@@ -43,7 +43,7 @@
     DMCore * sharedDMCore = [DMCore sharedDMCore];
         switch (button.tag) {
             case 1:
-                sharedDMCore.tolet.wallLamp = TRUE;
+                sharedDMCore.tolet.wallLamp = button.isSelected ? FALSE:TRUE;
                 break;
             case 2:
                 sharedDMCore.tolet.sPA = button.isSelected ? FALSE:TRUE;

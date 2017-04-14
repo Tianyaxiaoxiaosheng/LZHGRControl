@@ -66,6 +66,12 @@
       self.ipTextField.text = [self.sharedUDPNetwork.networkInfoDic objectForKey:@"host"];
 }
 - (IBAction)preserve:(id)sender {
+    //保存前检查IP地址规范
+    if (![self isIPAddressWithString:self.ipTextField.text]) {
+        NSLog(@"IP地址不符合规范");
+        return;
+    }
+    
     [self.sharedUDPNetwork.networkInfoDic setValue:self.ipTextField.text forKey:@"host"];
     
     if ([self.sharedUDPNetwork renewLocalNetworkInfo]) {
@@ -75,21 +81,93 @@
     }
 
 }
+- (NSString *)buildIPStringWithString:(NSString *)string{
+   
+    //检查数据规范
+    if (![self isFourBitOfRoomNumbersWithString:string]) {
+        return [self.sharedUDPNetwork.networkInfoDic objectForKey:@"host"];
+    }
+    
+    NSString *precedTwoSubStr = [string substringToIndex:2];
+    NSString *backTwoSubStr = [string substringFromIndex:2];
+    
+    return [NSString stringWithFormat:@"192.168.%@.%@", precedTwoSubStr, backTwoSubStr];
+    
+}
+
+//检查四位的房间号是否符合规范
+- (BOOL)isFourBitOfRoomNumbersWithString:(NSString *)string{
+    if (string.length > 4) {
+        return false;
+    }
+    
+    for (NSInteger i = 0; i < string.length; i++) {
+        unichar charactor = [string characterAtIndex:i];
+        if (!(charactor  >= 48 && charactor  <=57)) {
+            return false;
+        }
+    }
+    return true;
+}
+
+//检查ip地址是否符合规范
+- (BOOL)isIPAddressWithString:(NSString *)string{
+    if (string.length > 15) {
+        return false;
+    }
+    
+    NSInteger from = 0;
+    NSInteger length = string.length;
+//    NSInteger to   = 0; //有i 记录
+    
+    for (NSInteger i = 0; i < length; i++) {
+        unichar charactor = [string characterAtIndex:i];
+        
+        //判断字符规范
+        if ( !((charactor>= 48 && charactor<=57) || charactor==46) ) {
+            return false;
+        }
+        
+        //截取，判读是否在ip地址范围
+        if ((charactor==46) || (i==length-1)) {
+            NSInteger tempInt = [[string substringWithRange:NSMakeRange(from, (i-from+1))] integerValue];
+            //NSLog(@"%ld", tempInt);
+            if (!(tempInt >= 0 && tempInt <= 255)) {
+                return false;
+            }
+            from = i+1;
+        }
+    }
+    
+    //再次判读下所有字符是否送检
+    if (from != length) {
+        return false;
+    }
+    
+    //通过所有检测
+    return true;
+}
 
 #pragma mark - textField delegate
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string;
 {
+    NSString * toBeString = [textField.text stringByReplacingCharactersInRange:range withString:string]; //得到输入框的内容
+//    NSLog(@"rang: from %ld  to %ld ",range.location, range.length);
     
     if (self.ipTextField == textField)  //判断是否时我们想要限定的那个输入框
      {
-        if ([textField.text length] > 14) { //如果输入框内容大于20则弹出警告
+        if ([toBeString length] > 15) { //如果输入框内容大于14则弹出警告
             NSLog(@"ipTextField 超过最大数");
              return NO;
         }
     }
     
     if (self.roomNumTextField == textField) {
-        if ([textField.text length] > 3) { //如果输入框内容大于20则弹出警告
+        if ([toBeString length] == 4) {
+            self.ipTextField.text = [self buildIPStringWithString:toBeString];
+        }
+        
+        if ([toBeString length] > 4) { //如果输入框内容大于3则弹出警告
             NSLog(@"roomNumTextField 超过最大数");
             return NO;
         }
