@@ -11,7 +11,10 @@
 //#define ROOMNUBER @”0123456789”
 
 @interface SetKeyboardView ()<UITextFieldDelegate>
+@property (nonatomic, strong) MBProgressHUD *HUD;
+
 @property (nonatomic, strong) UDPNetwork *sharedUDPNetwork;
+
 @property (weak, nonatomic) IBOutlet UITextField *ipTextField;
 @property (weak, nonatomic) IBOutlet UITextField *roomNumTextField;
 @property (weak, nonatomic) IBOutlet UISwitch *sw;
@@ -72,6 +75,7 @@
     //保存前检查IP地址规范
     if (![self isIPAddressWithString:self.ipTextField.text]) {
         NSLog(@"IP地址不符合规范");
+        [self showMessage:@"IP地址不符合规范！"];
         return;
     }
     
@@ -79,8 +83,10 @@
     
     if ([self.sharedUDPNetwork renewLocalNetworkInfo]) {
         NSLog(@"保存成功");
+        [self showMessage:@"保存成功！"];
     }else{
         NSLog(@"保存失败");
+        [self showMessage:@"保存失败！"];
     }
 
 }
@@ -153,6 +159,33 @@
     
     //通过所有检测
     return true;
+}
+
+//提示信息
+- (void)showMessage:(NSString *)string{
+    self.HUD = [[MBProgressHUD alloc] initWithView:self];
+    [self addSubview:self.HUD];
+    
+    self.HUD.labelText = string;
+    self.HUD.mode = MBProgressHUDModeText;
+    
+    //指定距离中心点的X轴和Y轴的偏移量，如果不指定则在屏幕中间显示
+    //    HUD.yOffset = 150.0f;
+    //    HUD.xOffset = 100.0f;
+    
+    [self.HUD showAnimated:YES];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.HUD removeFromSuperview];
+        self.HUD = nil;
+    });
+//    [self.HUD showAnimated:YES whileExecutingBlock:^{
+//        sleep(2);
+//    } completionBlock:^{
+//        [self.HUD removeFromSuperview];
+////        [HUD release];
+//        self.HUD = nil;
+//    }];
+    
 }
 
 #pragma mark - textField delegate

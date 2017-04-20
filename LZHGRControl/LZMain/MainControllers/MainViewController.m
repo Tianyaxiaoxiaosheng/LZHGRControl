@@ -25,22 +25,25 @@
     EquipmentInfo *lightInfo = [sharedEquipmentInfoTool findEquipmentInfoWithName:@"灯光"];
     LightsViewController *lightsViewController = [[LightsViewController alloc] init];
     lightsViewController.tabBarItem.title = lightInfo.title;
-//    lightsViewController.tabBarItem.image = [UIImage imageNamed:lightInfo.icon];
+    lightsViewController.tabBarItem.image = [UIImage imageNamed:@"灯光01"];
     
     //空调控制器
     EquipmentInfo *airconInfo = [sharedEquipmentInfoTool findEquipmentInfoWithName:@"空调"];
     AirconViewController *airconViewController = [[AirconViewController alloc] init];
     airconViewController.tabBarItem.title = airconInfo.title;
+    airconViewController.tabBarItem.image = [UIImage imageNamed:@"空调01"];
     
     //服务控制器
     EquipmentInfo *serverInfo = [sharedEquipmentInfoTool findEquipmentInfoWithName:@"服务"];
     ServerViewController *serverViewController = [[ServerViewController alloc] init];
     serverViewController.tabBarItem.title = serverInfo.title;
+    serverViewController.tabBarItem.image = [UIImage imageNamed:@"服务01"];
     
     //设置控制器
     EquipmentInfo *setInfo = [sharedEquipmentInfoTool findEquipmentInfoWithName:@"设置"];
     SetViewController *setViewController = [[SetViewController alloc] init];
     setViewController.tabBarItem.title = setInfo.title;
+    setViewController.tabBarItem.image = [UIImage imageNamed:@"设置01"];
     
     //添加控制器
     self.viewControllers = @[lightsViewController, airconViewController, serverViewController, setViewController];
