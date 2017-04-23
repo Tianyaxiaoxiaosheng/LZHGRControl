@@ -53,15 +53,16 @@
 		F028156A1E9E189700A98EE9 /* spa2.png in Resources */ = {isa = PBXBuildFile; fileRef = F02815681E9E189700A98EE9 /* spa2.png */; };
 		F028156C1E9E21DF00A98EE9 /* MainLampLTView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F028156B1E9E21DF00A98EE9 /* MainLampLTView.xib */; };
 		F028156E1E9E23E400A98EE9 /* BedroomLTView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F028156D1E9E23E400A98EE9 /* BedroomLTView.xib */; };
-		F028157F1EA83EDA00A98EE9 /* 服务01.png in Resources */ = {isa = PBXBuildFile; fileRef = F02815771EA83EDA00A98EE9 /* 服务01.png */; };
-		F02815801EA83EDA00A98EE9 /* 服务02.png in Resources */ = {isa = PBXBuildFile; fileRef = F02815781EA83EDA00A98EE9 /* 服务02.png */; };
-		F02815811EA83EDA00A98EE9 /* 灯光01.png in Resources */ = {isa = PBXBuildFile; fileRef = F02815791EA83EDA00A98EE9 /* 灯光01.png */; };
-		F02815821EA83EDA00A98EE9 /* 灯光02.png in Resources */ = {isa = PBXBuildFile; fileRef = F028157A1EA83EDA00A98EE9 /* 灯光02.png */; };
-		F02815831EA83EDA00A98EE9 /* 空调01.png in Resources */ = {isa = PBXBuildFile; fileRef = F028157B1EA83EDA00A98EE9 /* 空调01.png */; };
-		F02815841EA83EDA00A98EE9 /* 空调02.png in Resources */ = {isa = PBXBuildFile; fileRef = F028157C1EA83EDA00A98EE9 /* 空调02.png */; };
-		F02815851EA83EDA00A98EE9 /* 设置01.png in Resources */ = {isa = PBXBuildFile; fileRef = F028157D1EA83EDA00A98EE9 /* 设置01.png */; };
-		F02815861EA83EDA00A98EE9 /* 设置02.png in Resources */ = {isa = PBXBuildFile; fileRef = F028157E1EA83EDA00A98EE9 /* 设置02.png */; };
 		F02815B31EA8812600A98EE9 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F02815B21EA8812600A98EE9 /* MBProgressHUD.m */; };
+		F02815B61EAC475800A98EE9 /* WDYTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = F02815B51EAC475800A98EE9 /* WDYTabbar.m */; };
+		F02815C31EACF97B00A98EE9 /* aircon0.png in Resources */ = {isa = PBXBuildFile; fileRef = F02815BB1EACF97B00A98EE9 /* aircon0.png */; };
+		F02815C41EACF97B00A98EE9 /* aircon1.png in Resources */ = {isa = PBXBuildFile; fileRef = F02815BC1EACF97B00A98EE9 /* aircon1.png */; };
+		F02815C51EACF97B00A98EE9 /* lights0.png in Resources */ = {isa = PBXBuildFile; fileRef = F02815BD1EACF97B00A98EE9 /* lights0.png */; };
+		F02815C61EACF97B00A98EE9 /* lights1.png in Resources */ = {isa = PBXBuildFile; fileRef = F02815BE1EACF97B00A98EE9 /* lights1.png */; };
+		F02815C71EACF97B00A98EE9 /* service0.png in Resources */ = {isa = PBXBuildFile; fileRef = F02815BF1EACF97B00A98EE9 /* service0.png */; };
+		F02815C81EACF97B00A98EE9 /* service1.png in Resources */ = {isa = PBXBuildFile; fileRef = F02815C01EACF97B00A98EE9 /* service1.png */; };
+		F02815C91EACF97B00A98EE9 /* setting0.png in Resources */ = {isa = PBXBuildFile; fileRef = F02815C11EACF97B00A98EE9 /* setting0.png */; };
+		F02815CA1EACF97B00A98EE9 /* setting1.png in Resources */ = {isa = PBXBuildFile; fileRef = F02815C21EACF97B00A98EE9 /* setting1.png */; };
 		F02C08931E9CB5ED00F3D476 /* ADiSu.png in Resources */ = {isa = PBXBuildFile; fileRef = F02C08741E9CB5ED00F3D476 /* ADiSu.png */; };
 		F02C08941E9CB5ED00F3D476 /* ADiSu2.png in Resources */ = {isa = PBXBuildFile; fileRef = F02C08751E9CB5ED00F3D476 /* ADiSu2.png */; };
 		F02C08971E9CB5ED00F3D476 /* JiangWen.png in Resources */ = {isa = PBXBuildFile; fileRef = F02C08781E9CB5ED00F3D476 /* JiangWen.png */; };
@@ -211,17 +212,19 @@
 		F02815681E9E189700A98EE9 /* spa2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spa2.png; sourceTree = "<group>"; };
 		F028156B1E9E21DF00A98EE9 /* MainLampLTView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainLampLTView.xib; sourceTree = "<group>"; };
 		F028156D1E9E23E400A98EE9 /* BedroomLTView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BedroomLTView.xib; sourceTree = "<group>"; };
-		F02815771EA83EDA00A98EE9 /* 服务01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "服务01.png"; sourceTree = "<group>"; };
-		F02815781EA83EDA00A98EE9 /* 服务02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "服务02.png"; sourceTree = "<group>"; };
-		F02815791EA83EDA00A98EE9 /* 灯光01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "灯光01.png"; sourceTree = "<group>"; };
-		F028157A1EA83EDA00A98EE9 /* 灯光02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "灯光02.png"; sourceTree = "<group>"; };
-		F028157B1EA83EDA00A98EE9 /* 空调01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "空调01.png"; sourceTree = "<group>"; };
-		F028157C1EA83EDA00A98EE9 /* 空调02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "空调02.png"; sourceTree = "<group>"; };
-		F028157D1EA83EDA00A98EE9 /* 设置01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "设置01.png"; sourceTree = "<group>"; };
-		F028157E1EA83EDA00A98EE9 /* 设置02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "设置02.png"; sourceTree = "<group>"; };
 		F02815AD1EA864C400A98EE9 /* HGRPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGRPrefixHeader.pch; sourceTree = "<group>"; };
 		F02815B11EA8812600A98EE9 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		F02815B21EA8812600A98EE9 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		F02815B41EAC475800A98EE9 /* WDYTabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDYTabbar.h; sourceTree = "<group>"; };
+		F02815B51EAC475800A98EE9 /* WDYTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDYTabbar.m; sourceTree = "<group>"; };
+		F02815BB1EACF97B00A98EE9 /* aircon0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aircon0.png; sourceTree = "<group>"; };
+		F02815BC1EACF97B00A98EE9 /* aircon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aircon1.png; sourceTree = "<group>"; };
+		F02815BD1EACF97B00A98EE9 /* lights0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lights0.png; sourceTree = "<group>"; };
+		F02815BE1EACF97B00A98EE9 /* lights1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lights1.png; sourceTree = "<group>"; };
+		F02815BF1EACF97B00A98EE9 /* service0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = service0.png; sourceTree = "<group>"; };
+		F02815C01EACF97B00A98EE9 /* service1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = service1.png; sourceTree = "<group>"; };
+		F02815C11EACF97B00A98EE9 /* setting0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting0.png; sourceTree = "<group>"; };
+		F02815C21EACF97B00A98EE9 /* setting1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting1.png; sourceTree = "<group>"; };
 		F02C08741E9CB5ED00F3D476 /* ADiSu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ADiSu.png; sourceTree = "<group>"; };
 		F02C08751E9CB5ED00F3D476 /* ADiSu2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ADiSu2.png; sourceTree = "<group>"; };
 		F02C08781E9CB5ED00F3D476 /* JiangWen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JiangWen.png; sourceTree = "<group>"; };
@@ -396,14 +399,14 @@
 		F02815761EA83EDA00A98EE9 /* TabBarImages */ = {
 			isa = PBXGroup;
 			children = (
-				F02815771EA83EDA00A98EE9 /* 服务01.png */,
-				F02815781EA83EDA00A98EE9 /* 服务02.png */,
-				F02815791EA83EDA00A98EE9 /* 灯光01.png */,
-				F028157A1EA83EDA00A98EE9 /* 灯光02.png */,
-				F028157B1EA83EDA00A98EE9 /* 空调01.png */,
-				F028157C1EA83EDA00A98EE9 /* 空调02.png */,
-				F028157D1EA83EDA00A98EE9 /* 设置01.png */,
-				F028157E1EA83EDA00A98EE9 /* 设置02.png */,
+				F02815BB1EACF97B00A98EE9 /* aircon0.png */,
+				F02815BC1EACF97B00A98EE9 /* aircon1.png */,
+				F02815BD1EACF97B00A98EE9 /* lights0.png */,
+				F02815BE1EACF97B00A98EE9 /* lights1.png */,
+				F02815BF1EACF97B00A98EE9 /* service0.png */,
+				F02815C01EACF97B00A98EE9 /* service1.png */,
+				F02815C11EACF97B00A98EE9 /* setting0.png */,
+				F02815C21EACF97B00A98EE9 /* setting1.png */,
 			);
 			path = TabBarImages;
 			sourceTree = "<group>";
@@ -675,6 +678,8 @@
 				F06B166C1E9768030044B677 /* TitleBarView.h */,
 				F06B166D1E9768030044B677 /* TitleBarView.m */,
 				F06B16851E9768E20044B677 /* TitleBarView.xib */,
+				F02815B41EAC475800A98EE9 /* WDYTabbar.h */,
+				F02815B51EAC475800A98EE9 /* WDYTabbar.m */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -977,7 +982,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F06B164B1E97661B0044B677 /* light.png in Resources */,
+				F02815C41EACF97B00A98EE9 /* aircon1.png in Resources */,
 				F02C089A1E9CB5ED00F3D476 /* model_hot.png in Resources */,
+				F02815C61EACF97B00A98EE9 /* lights1.png in Resources */,
 				F02815471E9E17C200A98EE9 /* reception.png in Resources */,
 				F028154C1E9E17C200A98EE9 /* sleep2.png in Resources */,
 				F02815451E9E17C200A98EE9 /* working.png in Resources */,
@@ -994,13 +1001,13 @@
 				F06B164C1E97661B0044B677 /* server.png in Resources */,
 				F0A64BC51E9CB2B600DD3FD3 /* Scene22.png in Resources */,
 				F0A64BBE1E9CB2B600DD3FD3 /* LightClose.png in Resources */,
-				F02815821EA83EDA00A98EE9 /* 灯光02.png in Resources */,
 				F0A64BC21E9CB2B600DD3FD3 /* Scene1.png in Resources */,
 				F02815641E9E187F00A98EE9 /* voice-2.png in Resources */,
 				F02C08AD1E9CB5ED00F3D476 /* AZhongSu.png in Resources */,
 				F02815111E9CBDFF00A98EE9 /* AGaosu.png in Resources */,
 				F02815151E9CBFE500A98EE9 /* AZidong.png in Resources */,
 				F0A64BCE1E9CB2B600DD3FD3 /* Service_WR.png in Resources */,
+				F02815C71EACF97B00A98EE9 /* service0.png in Resources */,
 				F0A64BBF1E9CB2B600DD3FD3 /* LightClose2.png in Resources */,
 				F02815201E9CC0BD00A98EE9 /* aircon_temp.png in Resources */,
 				F02C08A61E9CB5ED00F3D476 /* wind_speed4.png in Resources */,
@@ -1008,6 +1015,7 @@
 				F028155E1E9E186400A98EE9 /* tv+2.png in Resources */,
 				F02C08A21E9CB5ED00F3D476 /* wind_speed0.png in Resources */,
 				F02815541E9E183D00A98EE9 /* spaClose2.png in Resources */,
+				F02815C81EACF97B00A98EE9 /* service1.png in Resources */,
 				F02815301E9DC37300A98EE9 /* ON.png in Resources */,
 				F02815691E9E189700A98EE9 /* spa.png in Resources */,
 				F0A64BCD1E9CB2B600DD3FD3 /* Service_SOS2.png in Resources */,
@@ -1017,11 +1025,13 @@
 				F06B16801E9768B30044B677 /* OverAllControlView.xib in Resources */,
 				F0A64BC11E9CB2B600DD3FD3 /* LightOpen2.png in Resources */,
 				F0A64BC01E9CB2B600DD3FD3 /* LightOpen.png in Resources */,
+				F02815CA1EACF97B00A98EE9 /* setting1.png in Resources */,
+				F02815C51EACF97B00A98EE9 /* lights0.png in Resources */,
+				F02815C91EACF97B00A98EE9 /* setting0.png in Resources */,
 				F06B16861E9768E20044B677 /* TitleBarView.xib in Resources */,
 				F02815121E9CBDFF00A98EE9 /* AGaosu2.png in Resources */,
 				F02C08931E9CB5ED00F3D476 /* ADiSu.png in Resources */,
 				F0A64BCB1E9CB2B600DD3FD3 /* Service_QL2.png in Resources */,
-				F02815861EA83EDA00A98EE9 /* 设置02.png in Resources */,
 				F028150E1E9CBD4200A98EE9 /* ATongfeng2.png in Resources */,
 				F028155C1E9E186400A98EE9 /* tv-2.png in Resources */,
 				F02815631E9E187F00A98EE9 /* voice-.png in Resources */,
@@ -1034,34 +1044,29 @@
 				F028154B1E9E17C200A98EE9 /* sleep.png in Resources */,
 				F0A64BC41E9CB2B600DD3FD3 /* Scene2.png in Resources */,
 				F02815461E9E17C200A98EE9 /* working2.png in Resources */,
-				F028157F1EA83EDA00A98EE9 /* 服务01.png in Resources */,
+				F02815C31EACF97B00A98EE9 /* aircon0.png in Resources */,
 				F028151D1E9CC07C00A98EE9 /* AZhire.png in Resources */,
 				F06B167E1E9768A50044B677 /* LTNavigationBarView.xib in Resources */,
 				F028152B1E9DBF2200A98EE9 /* GuestBathroomLTView.xib in Resources */,
 				F02C089F1E9CB5ED00F3D476 /* ATingZhi2.png in Resources */,
-				F02815801EA83EDA00A98EE9 /* 服务02.png in Resources */,
 				F028152D1E9DBF4800A98EE9 /* CloakroomLTView.xib in Resources */,
 				F028156C1E9E21DF00A98EE9 /* MainLampLTView.xib in Resources */,
 				F0A64BC31E9CB2B600DD3FD3 /* Scene12.png in Resources */,
 				F06B164D1E97661B0044B677 /* main_bk.jpg in Resources */,
-				F02815831EA83EDA00A98EE9 /* 空调01.png in Resources */,
 				F028150D1E9CBD4200A98EE9 /* ATongfeng.png in Resources */,
 				F02815651E9E187F00A98EE9 /* voice+.png in Resources */,
 				F02C08A31E9CB5ED00F3D476 /* wind_speed1.png in Resources */,
 				F02815311E9DC37300A98EE9 /* OFF.png in Resources */,
-				F02815851EA83EDA00A98EE9 /* 设置01.png in Resources */,
 				F02C08981E9CB5ED00F3D476 /* JiangWen2.png in Resources */,
 				F0A64BC91E9CB2B600DD3FD3 /* Scene42.png in Resources */,
 				F02C089C1E9CB5ED00F3D476 /* Shengwen.png in Resources */,
 				F02C089E1E9CB5ED00F3D476 /* ATingZhi.png in Resources */,
 				F02C08A51E9CB5ED00F3D476 /* wind_speed3.png in Resources */,
-				F02815841EA83EDA00A98EE9 /* 空调02.png in Resources */,
 				F02C089D1E9CB5ED00F3D476 /* Shengwen2.png in Resources */,
 				F02815531E9E183D00A98EE9 /* spaClose.png in Resources */,
 				F06B164F1E97665C0044B677 /* EquipmentInfoList.plist in Resources */,
 				F028155D1E9E186400A98EE9 /* tv+.png in Resources */,
 				F028155B1E9E186400A98EE9 /* tv-.png in Resources */,
-				F02815811EA83EDA00A98EE9 /* 灯光01.png in Resources */,
 				F02C08971E9CB5ED00F3D476 /* JiangWen.png in Resources */,
 				F02815661E9E187F00A98EE9 /* voice+2.png in Resources */,
 				F0A64BC71E9CB2B600DD3FD3 /* Scene32.png in Resources */,
@@ -1195,6 +1200,7 @@
 				F06B163C1E9765BE0044B677 /* AirconViewController.m in Sources */,
 				F06B167A1E9768510044B677 /* EquipmentInfo.m in Sources */,
 				F06B16451E9765FA0044B677 /* SetViewController.m in Sources */,
+				F02815B61EAC475800A98EE9 /* WDYTabbar.m in Sources */,
 				F02815291E9DBE2200A98EE9 /* LightsButton.m in Sources */,
 				F06B16681E9767B10044B677 /* ServerKeyboardView.m in Sources */,
 				F06B16351E9764240044B677 /* AsyncUdpSocket.m in Sources */,
@@ -1362,6 +1368,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_OPTIMIZATION_PROFILE_FILE = /Users/jony/MyAPP/Hotel/LZHGRControl/LZHGRControl/LZPch/HGRPrefixHeader.pch;
 				DEVELOPMENT_TEAM = E47JKL8BW9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1378,6 +1385,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_OPTIMIZATION_PROFILE_FILE = /Users/jony/MyAPP/Hotel/LZHGRControl/LZHGRControl/LZPch/HGRPrefixHeader.pch;
 				DEVELOPMENT_TEAM = E47JKL8BW9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

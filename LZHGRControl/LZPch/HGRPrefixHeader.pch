@@ -35,6 +35,7 @@
 #import "EquipmentInfoManage.h"
 
 //sub view
+#import "WDYTabbar.h"
 #import "TitleBarView.h"
 #import "ServerKeyboardView.h"
 #import "SetKeyboardView.h"
