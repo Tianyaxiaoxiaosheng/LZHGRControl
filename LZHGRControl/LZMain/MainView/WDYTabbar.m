@@ -41,7 +41,8 @@
 //    NSLog(@"%lf, %lf, %lf, %lf,", frame.origin.x, frame.origin.y, frame.size.width, frame.size.height);
 //    
     if (self = [super initWithFrame:frame]) {
-        self.backgroundColor = [UIColor grayColor];
+//        self.backgroundColor = [UIColor grayColor];
+           self.backgroundColor = [UIColor colorWithRed:192/255 green:192/255 blue:192/255 alpha:0.4];
         
     }
     return  self;
@@ -96,7 +97,7 @@
     
     for (UIButton *btn in self.subviews) {
         CGFloat btnIntX = (btnW+20) * btn.tag + initialX;
-        btn.frame = CGRectMake(btnIntX, 20.0, btnW, btnH);
+        btn.frame = CGRectMake(btnIntX, 10.0, btnW, btnH);
     }
     
 }

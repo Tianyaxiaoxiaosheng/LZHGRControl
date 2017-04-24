@@ -28,7 +28,7 @@
 		<key>name</key>
 		<string>服务</string>
 		<key>title</key>
-		<string>SERVER</string>
+		<string>SERVICE</string>
 		<key>icon</key>
 		<string>server.png</string>
 	</dict>
@@ -38,7 +38,7 @@
 		<key>name</key>
 		<string>设置</string>
 		<key>title</key>
-		<string>SET</string>
+		<string>SETTING</string>
 		<key>icon</key>
 		<string></string>
 	</dict>

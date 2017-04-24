@@ -19,40 +19,46 @@
     
     //设置主界面背景
     self.view.backgroundColor = MAIN_VIEW_BACKGROUND;
-    self.tabBar.backgroundColor = [UIColor colorWithRed:192/255 green:192/255 blue:192/255 alpha:0.0];
     
-    //替换系统Tarbar
-    CGRect tabbarFrame = CGRectMake(self.tabBar.bounds.origin.x
-                               , self.view.bounds.size.height-90
-                               , self.tabBar.bounds.size.width
-                               , 90);
-    WDYTabbar *wDYTabbar = [[WDYTabbar alloc] initWithFrame:tabbarFrame];
-    
-    [wDYTabbar addTabbarBtnWithNormalImg:@"lights0" selImg:@"lights1"];
-    [wDYTabbar addTabbarBtnWithNormalImg:@"aircon0" selImg:@"aircon1"];
-    [wDYTabbar addTabbarBtnWithNormalImg:@"service0" selImg:@"service1"];
-    [wDYTabbar addTabbarBtnWithNormalImg:@"setting0" selImg:@"setting1"];
-    
-    //设置代理
-    wDYTabbar.delegate = self;
-    
-    //把自定义的tabbar添加到 系统的tabbar上
-//    self.tabBar.frame.size.height = self.tabBar.frame.size.height+1100;
-    [self.view addSubview:wDYTabbar];
+    NSLog(@"%lf, %lf, %lf, %lf,", self.view.frame.origin.x, self.view.frame.origin.y, self.view.frame.size.width, self.view.frame.size.height);
+//    self.tabBar.hidden = YES; //系统的tabbar隐藏后最下面会出现白条
     
     //添加控制器
     [self addControllerForTabBarController];
-    
-  
-    //设置分栏
-//    UITabBar *tabBar = self.tabBar;
-//    tabBar.frame.size.height = 100.0;
-//    tabBar.barStyle = UIBarStyleBlack;
-//    tabBar.translucent = NO;
-//    tabBar.barTintColor = [UIColor redColor];
-//    tabBar.backgroundColor = [UIColor orangeColor];
-    
 
+}
+
+- (void)viewDidLayoutSubviews{
+//    NSLog(@"%s",__func__);
+    
+    //此方法在创建每个子View时都会调用，此类中调用两次，下方代码只需要一次
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        CGRect frame = CGRectMake(0
+                                  , self.tabBar.frame.origin.y-41
+                                  , self.tabBar.frame.size.width
+                                  , 90);
+        self.tabBar.frame = frame;
+        
+        NSLog(@"%lf, %lf, %lf, %lf,", self.tabBar.frame.origin.x, self.tabBar.frame.origin.y, self.tabBar.frame.size.width, self.tabBar.frame.size.height);
+//        self.tabBar.backgroundColor = [UIColor redColor];
+        
+        WDYTabbar *wDYTabbar = [[WDYTabbar alloc] initWithFrame:self.tabBar.bounds];
+        
+        //添加五个按钮
+        [wDYTabbar addTabbarBtnWithNormalImg:@"lights0" selImg:@"lights1"];
+        [wDYTabbar addTabbarBtnWithNormalImg:@"aircon0" selImg:@"aircon1"];
+        [wDYTabbar addTabbarBtnWithNormalImg:@"service0" selImg:@"service1"];
+        [wDYTabbar addTabbarBtnWithNormalImg:@"setting0" selImg:@"setting1"];
+        
+        //设置代理
+        wDYTabbar.delegate = self;
+        
+        //把自定义的tabbar添加到 系统的tabbar上
+        [self.tabBar addSubview:wDYTabbar];
+    });
+ 
+ 
 }
 
 //添加控制器
